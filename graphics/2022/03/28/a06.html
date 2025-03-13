@@ -1,130 +1,222 @@
-
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Work 06: If your shapes don’t look solid, TRI a different ANGLE | Computer Graphics</title>
-<meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Work 06: If your shapes don’t look solid, TRI a different ANGLE" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm" />
-<meta property="og:description" content="Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm" />
-<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html" />
-<meta property="og:url" content="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html" />
-<meta property="og:site_name" content="Computer Graphics" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-03-28T00:00:00+00:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Work 06: If your shapes don’t look solid, TRI a different ANGLE" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-28T00:00:00+00:00","datePublished":"2022-03-28T00:00:00+00:00","description":"Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm","headline":"Work 06: If your shapes don’t look solid, TRI a different ANGLE","mainEntityOfPage":{"@type":"WebPage","@id":"http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"},"url":"http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/feed.xml" title="Computer Graphics" /><!-- removing jquery and bootstrap assets
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>
+      Work 06: If your shapes don’t look solid, TRI a different ANGLE | Computer
+      Graphics
+    </title>
+    <meta name="generator" content="Jekyll v3.9.2" />
+    <meta
+      property="og:title"
+      content="Work 06: If your shapes don’t look solid, TRI a different ANGLE"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm"
+    />
+    <meta
+      property="og:description"
+      content="Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm"
+    />
+    <link
+      rel="canonical"
+      href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"
+    />
+    <meta
+      property="og:url"
+      content="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"
+    />
+    <meta property="og:site_name" content="Computer Graphics" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2022-03-28T00:00:00+00:00"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      property="twitter:title"
+      content="Work 06: If your shapes don’t look solid, TRI a different ANGLE"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "dateModified": "2022-03-28T00:00:00+00:00",
+        "datePublished": "2022-03-28T00:00:00+00:00",
+        "description": "Due: Monday 04/04 8:00am Period 4 GitHub link: https://classroom.github.com/a/uyoutxth Period 5 GitHub link: https://classroom.github.com/a/qH9LVULm",
+        "headline": "Work 06: If your shapes don’t look solid, TRI a different ANGLE",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"
+        },
+        "url": "http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/03/28/a06.html"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+    <link rel="stylesheet" href="/stuycs-archive/graphics/assets/main.css" />
+    <link
+      type="application/atom+xml"
+      rel="alternate"
+      href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/feed.xml"
+      title="Computer Graphics"
+    />
+    <!-- removing jquery and bootstrap assets
   <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="../../../assets/js/bootstrap.min.js"></script>
   -->
 
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="stylesheet" href="../../../assets/css/site.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico">
-
-</head>
-<body>
-
-<nav>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/stuycs-archive/graphics/assets/css/site.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+  </head>
+  <body>
+    <nav>
       <ul class="navbar">
         <li>
           <a href="../../../../">StuyCSArchive</a>
-          </li> 
-      
-      
-            
-            
-            <li class = "active">
-              <a href = "../../../">Graphics</a>
-            </li>
-      
-            
-            
-            <li class = "">
-              <a href = "../../../assignments">Assignments</a>
-            </li>
-      
-            
-            
-            <li class = "">
-              <a href = "../../../notes">Notes</a>
-            </li>
-      
-            
-            
-            <li class = "">
-              <a href = "../../../resources">Resources</a>
-            </li>
-      
+        </li>
+
+        <li class="active">
+          <a href="../../../">Graphics</a>
+        </li>
+
+        <li class="">
+          <a href="../../../assignments">Assignments</a>
+        </li>
+
+        <li class="">
+          <a href="../../../notes">Notes</a>
+        </li>
+
+        <li class="">
+          <a href="../../../resources">Resources</a>
+        </li>
       </ul>
-</nav>
-<div class="container">
-      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    </nav>
+    <div class="container">
+      <article
+        class="post h-entry"
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
+        <header class="post-header">
+          <h1 class="post-title p-name" itemprop="name headline">
+            Work 06: If your shapes don&#39;t look solid, TRI a different ANGLE
+          </h1>
+          <p class="post-meta">
+            <time
+              class="dt-published"
+              datetime="2022-03-28T00:00:00+00:00"
+              itemprop="datePublished"
+              >Mar 28, 2022
+            </time>
+          </p>
+        </header>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Work 06: If your shapes don&#39;t look solid, TRI a different ANGLE</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2022-03-28T00:00:00+00:00" itemprop="datePublished">Mar 28, 2022
-      </time></p>
-  </header>
+        <div class="post-content e-content" itemprop="articleBody">
+          <h4 id="due-monday-0404-800am">Due: Monday 04/04 8:00am</h4>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <h4 id="due-monday-0404-800am">Due: Monday 04/04 8:00am</h4>
+          <h4>
+            Period 4 GitHub link:
+            <a href="https://classroom.github.com/a/uyoutxth" target="blank"
+              >https://classroom.github.com/a/uyoutxth</a
+            >
+          </h4>
+          <h4>
+            Period 5 GitHub link:
+            <a href="https://classroom.github.com/a/qH9LVULm" target="blank"
+              >https://classroom.github.com/a/qH9LVULm</a
+            >
+          </h4>
+          <!--more-->
 
-<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/uyoutxth" target="blank">https://classroom.github.com/a/uyoutxth</a></h4>
-<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/qH9LVULm" target="blank">https://classroom.github.com/a/qH9LVULm</a></h4>
-<!--more-->
+          <p><a href="" style="color: lightsteelblue"> </a></p>
 
-<p><a href="" style="color: lightsteelblue"> </a></p>
+          <p>
+            <strong
+              >For testing &amp; submission purposes, please use the shape
+              testing script from the previous assignment.</strong
+            >
+          </p>
 
-<p><strong>For testing &amp; submission purposes, please use the shape testing script from the previous assignment.</strong></p>
+          <p><strong>NEW ADDITION</strong></p>
+          <ul>
+            <li>Implement the following vector functions</li>
+            <li>
+              Find the dot product of 2 vectors (provided as arrays/lists of 3
+              values)
+            </li>
+            <li>
+              Calculate the surface normal of a triangle in the polygon matrix
+              (provided the polygon matrix and index.
+            </li>
+            <li>
+              Check out gmath.h/c or gmath.py for headers and comments.
+              <ul>
+                <li>
+                  There are funtion headers listed for normalizing a vector, you
+                  can ignore those if you want.
+                </li>
+                <li>
+                  We won’t be needing that functionality until we get to
+                  lighting &amp; shading.
+                </li>
+              </ul>
+            </li>
+            <li>Implement Backface culling.</li>
+          </ul>
 
-<p><strong>NEW ADDITION</strong></p>
-<ul>
-  <li>Implement the following vector functions</li>
-  <li>Find the dot product of 2 vectors (provided as arrays/lists of 3 values)</li>
-  <li>Calculate the surface normal of a triangle in the polygon matrix (provided the polygon matrix and index.</li>
-  <li>Check out gmath.h/c or gmath.py for headers and comments.
-    <ul>
-      <li>There are funtion headers listed for normalizing a vector, you can ignore those if you want.</li>
-      <li>We won’t be needing that functionality until we get to lighting &amp; shading.</li>
-    </ul>
-  </li>
-  <li>Implement Backface culling.</li>
-</ul>
+          <p>Time to began 3d-rendering in earnest!</p>
 
-<p>Time to began 3d-rendering in earnest!</p>
+          <p>You must do the following things (this is not new):</p>
+          <ol>
+            <li>Write correct, functioning code.</li>
+            <li>Submit code that runs the provided testing script</li>
+            <li>Upload an original picture to the gallery</li>
+          </ol>
 
-<p>You must do the following things (this is not new):</p>
-<ol>
-  <li>Write correct, functioning code.</li>
-  <li>Submit code that runs the provided testing script</li>
-  <li>Upload an original picture to the gallery</li>
-</ol>
-
-<p>The Drawing:</p>
-<ul>
-  <li>Create new functions to add a polygon to a matrix, and go through the matrix 3 points at a time to draw triangles.</li>
-  <li>You should have a new triangle matrix that exists alongside the edge matrix. The edge matrix should be used for the shapes that are exclusively 2d (lines, circles, splines), and the triangle matrix for our 3d shapes.</li>
-  <li>Anything aside from shape drawing that modifies/uses the edge matrix (apply, clear, display, save) should now modify/use the triangle matrix as well.</li>
-  <li>Modify add box, add sphere and add torus to add triangles to the new triangle matrix instead of points.</li>
-  <li>Make sure the parser calls the draw_polygons functions when needed instead of draw_lines.</li>
-</ul>
-
-  </div><a class="u-url" href="../../../2022/03/28/a06.html" hidden></a>
-</article>
-
+          <p>The Drawing:</p>
+          <ul>
+            <li>
+              Create new functions to add a polygon to a matrix, and go through
+              the matrix 3 points at a time to draw triangles.
+            </li>
+            <li>
+              You should have a new triangle matrix that exists alongside the
+              edge matrix. The edge matrix should be used for the shapes that
+              are exclusively 2d (lines, circles, splines), and the triangle
+              matrix for our 3d shapes.
+            </li>
+            <li>
+              Anything aside from shape drawing that modifies/uses the edge
+              matrix (apply, clear, display, save) should now modify/use the
+              triangle matrix as well.
+            </li>
+            <li>
+              Modify add box, add sphere and add torus to add triangles to the
+              new triangle matrix instead of points.
+            </li>
+            <li>
+              Make sure the parser calls the draw_polygons functions when needed
+              instead of draw_lines.
+            </li>
+          </ul>
+        </div>
+        <a class="u-url" href="../../../2022/03/28/a06.html" hidden></a>
+      </article>
     </div>
-
-
   </body>
-
 </html>
