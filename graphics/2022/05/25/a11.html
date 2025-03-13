@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Work 11: Gettin’ Giffy With It | Computer Graphics</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Work 11: Gettin’ Giffy With It" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Due: Period 4 GitHub link: https://classroom.github.com/a/K9zgaLOa Period 5 GitHub link: https://classroom.github.com/a/ffs9dXbN" />
+<meta property="og:description" content="Due: Period 4 GitHub link: https://classroom.github.com/a/K9zgaLOa Period 5 GitHub link: https://classroom.github.com/a/ffs9dXbN" />
+<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/05/25/a11.html" />
+<meta property="og:url" content="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/05/25/a11.html" />
+<meta property="og:site_name" content="Computer Graphics" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-25T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Work 11: Gettin’ Giffy With It" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-05-25T00:00:00+00:00","datePublished":"2022-05-25T00:00:00+00:00","description":"Due: Period 4 GitHub link: https://classroom.github.com/a/K9zgaLOa Period 5 GitHub link: https://classroom.github.com/a/ffs9dXbN","headline":"Work 11: Gettin’ Giffy With It","mainEntityOfPage":{"@type":"WebPage","@id":"http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/05/25/a11.html"},"url":"http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/05/25/a11.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/feed.xml" title="Computer Graphics" /><!-- removing jquery and bootstrap assets
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  -->
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico">
+
+</head>
+<body>
+
+<nav>
+      <ul class="navbar">
+        <li>
+          <a href="../../../../">StuyCSArchive</a>
+          </li> 
+      
+      
+            
+            
+            <li class = "active">
+              <a href = "../../../">Graphics</a>
+            </li>
+      
+            
+            
+            <li class = "">
+              <a href = "../../../assignments">Assignments</a>
+            </li>
+      
+            
+            
+            <li class = "">
+              <a href = "../../../notes">Notes</a>
+            </li>
+      
+            
+            
+            <li class = "">
+              <a href = "../../../resources">Resources</a>
+            </li>
+      
+      </ul>
+</nav>
+<div class="container">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Work 11: Gettin&#39; Giffy With It</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-05-25T00:00:00+00:00" itemprop="datePublished">May 25, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="due">Due:</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/K9zgaLOa" target="blank">https://classroom.github.com/a/K9zgaLOa</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/ffs9dXbN" target="blank">https://classroom.github.com/a/ffs9dXbN</a></h4>
+<!--more-->
+
+<p><a href="https://www.youtube.com/watch?v=3JcmQONgXJM" style="color: lightsteelblue"> giggy?</a></p>
+
+<p>Animation! Woohoo!</p>
+
+<p>New MDL commands to implement:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">frames</code>
+    <ul>
+      <li>set the number of frames</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">basename</code>
+    <ul>
+      <li>sets the basename for animation file saving</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">vary</code>
+    <ul>
+      <li>vary the values for a knob between 2 values in a set range of frames</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The key animation commands are <code class="language-plaintext highlighter-rouge">frames</code>, <code class="language-plaintext highlighter-rouge">basename</code> and <code class="language-plaintext highlighter-rouge">vary</code>. You should proceed with animation code in 3 steps:</p>
+<ul>
+  <li>Step 0:
+    <ul>
+      <li>Go through the operations list and look for any of the three animation commands</li>
+      <li>Set <code class="language-plaintext highlighter-rouge">frames</code> and <code class="language-plaintext highlighter-rouge">basename</code></li>
+      <li>Handle erros as needed</li>
+    </ul>
+  </li>
+  <li>Step 1:
+    <ul>
+      <li>Go through the operations list a second time and look for the <code class="language-plaintext highlighter-rouge">vary</code> command</li>
+      <li>Populate a table that has an entry for each frame, and in each frame it has a value for each knob</li>
+      <li>When completed, the table should contain the correctly set values for each knob (perform the varying calculation)</li>
+      <li>In c, there is a <code class="language-plaintext highlighter-rouge">struct vary_node</code> defined in parser.h</li>
+      <li>In python, you could use a list (for each frame number) of dictionaries (for each name:value knob).</li>
+      <li>Handle errors as needed</li>
+    </ul>
+  </li>
+  <li>Step 2:
+    <ul>
+      <li>Perform the normal interpreting/drawing steps that are currently working, with the following additions if animation code is present.</li>
+      <li>Before looking over the operations list, look at the table of knob values (set in the second step) and set each knob in the symbol table to the appropriate value.
+        <ul>
+          <li>If a knob name is not present for the given frame, do nothing to its symbol table entry.</li>
+        </ul>
+      </li>
+      <li>Run the normal operations
+        <ul>
+          <li>Apply knob values if present for transformation commands.</li>
+        </ul>
+      </li>
+      <li>At the end of the loop, save the current screen to a file, the file should have the <code class="language-plaintext highlighter-rouge">basename</code> followed by a number, so that animate will work correctly.</li>
+      <li>I suggest you put all the animation frames in a subdirectory, so just add a directory name to the basename when saving files</li>
+      <li>In c, you can pad the beginning of a string with 0’s using the following syntax (if x = 12):
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">sprintf (s, "%03d", x )</code> will set s to the string <code class="language-plaintext highlighter-rouge">"012"</code></li>
+          <li>The 0 indicates that you are padding with 0, and the 3 indicates that if x is less that 3 digits in length the number will be padded with 0</li>
+        </ul>
+      </li>
+      <li>python has similar functionality using python formatted strings
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">f"%03d"%12</code>  will give you “012”</li>
+        </ul>
+      </li>
+      <li>When you are done with each frame loop, don’t forget to reset the screen, origin stack and any other pieces of data that are specific to a given frame</li>
+    </ul>
+  </li>
+  <li>Once you have generated all the frames in Step 2, you should stich them together to make a gif file.
+    <ul>
+      <li>In python and c, I’ve included a <code class="language-plaintext highlighter-rouge">make_animation</code> function in display.c/py that will generate the animation for you. The C version relies on an imagemagick installation. While the python verion uses the <code class="language-plaintext highlighter-rouge">imageio</code> module (you made need to install via <code class="language-plaintext highlighter-rouge">pip</code>)</li>
+      <li>Some more details on the <code class="language-plaintext highlighter-rouge">imagemagick</code> approach</li>
+      <li><code class="language-plaintext highlighter-rouge">$ animate</code>
+        <ul>
+          <li>Will display multiple single image files in succession as a single animation, with a default frame rate of 100 frames per second, by using the <code class="language-plaintext highlighter-rouge">-delay option</code>, you can change the fps ( <code class="language-plaintext highlighter-rouge">-delay x</code> will set the frame rate to <code class="language-plaintext highlighter-rouge">100/x</code> fps )</li>
+          <li><code class="language-plaintext highlighter-rouge">$ animate -delay 1.7 animations/orb*</code></li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">$ convert</code> can, like <code class="language-plaintext highlighter-rouge">animate</code>, take a number of frames and animate them, but instead of displaying the animation, it will combine them into a single animated gif file. Note that the only image format that can use animation is gif.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">$ convert -delay 10 animations/orb* orb.gif</code> will create a single animated gif called orb.gif</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="../../../2022/05/25/a11.html" hidden></a>
+</article>
+
+    </div>
+
+
+  </body>
+
+</html>

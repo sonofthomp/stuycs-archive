@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Assignments | Computer Graphics</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Assignments" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Class website for Mr. Dyrland-Weaver’s Computer Graphics Sections" />
+<meta property="og:description" content="Class website for Mr. Dyrland-Weaver’s Computer Graphics Sections" />
+<link rel="canonical" href="../assignments/" />
+<meta property="og:url" content="../assignments/" />
+<meta property="og:site_name" content="Computer Graphics" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Assignments" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Class website for Mr. Dyrland-Weaver’s Computer Graphics Sections","headline":"Assignments","url":"../assignments/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="../assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://www.stuycs.org/graphics-dw/feed.xml" title="Computer Graphics" /><!-- removing jquery and bootstrap assets
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="/graphics-dw/assets/js/bootstrap.min.js"></script>
+  -->
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/graphics-dw/favicon.ico">
+
+</head>
+<body>
+
+<nav>
+      <ul class="navbar">
+        <li>
+          <a href="../../">StuyCSArchive</a>
+          </li> 
+      
+      
+            
+            
+            <li class = "active">
+              <a href = "../">Graphics</a>
+            </li>
+      
+            
+            
+            <li class = "active">
+              <a href = ".">Assignments</a>
+            </li>
+      
+            
+            
+            <li class = "">
+              <a href = "../notes">Notes</a>
+            </li>
+      
+            
+            
+            <li class = "">
+              <a href = "../resources">Resources</a>
+            </li>
+      
+      </ul>
+</nav>
+<div class="container">
+      <article class="post">
+
+
+  <header class="post-header">
+    <h1 class="post-title">Assignments</h1>
+  </header>
+
+  <div class="post-content">
+    <h3 id="super-important-sumission-guidelines">SUPER IMPORTANT SUMISSION GUIDELINES</h3>
+
+<ul>
+  <li>You must include a makefile for each assignment!
+    <ul>
+      <li>Makefile help: <a href="https://www.stuycs.org/systems-dw/notes/#make">https://www.stuycs.org/systems-dw/notes/#make</a></li>
+      <li>The makefile should invoke whatever is needed to compile and/or run your program.</li>
+      <li>When I type make, I expect to have your program generate and display an image.
+        <ul>
+          <li>For displaying, you have multiple options:
+            <ul>
+              <li>Use the built in <code class="language-plaintext highlighter-rouge">display</code> functions provided in <code class="language-plaintext highlighter-rouge">display.py</code> or <code class="language-plaintext highlighter-rouge">display.c</code>.</li>
+              <li>Have your <code class="language-plaintext highlighter-rouge">makefile</code> call the <code class="language-plaintext highlighter-rouge">display</code> command line utility after running your program.</li>
+              <li>Both of those options require a working <code class="language-plaintext highlighter-rouge">imagemagick</code> installation.</li>
+              <li>You could also use the <code class="language-plaintext highlighter-rouge">open</code> command line uility in your makefile (but not <code class="language-plaintext highlighter-rouge">xdg-open</code>).</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>If you cannot get the image to display (either programmatically or via the display command line program), then your program should print the name of the image file created.</li>
+    </ul>
+  </li>
+  <li>The image created should thoroughly test the assignment by using the test code provided by me in <code class="language-plaintext highlighter-rouge">main.c</code> or <code class="language-plaintext highlighter-rouge">main.py</code>.</li>
+  <li>Every assignment (unless otherwise noted) will require both a github submission and an image gallery submission. Full credit will require both.</li>
+  <li>The gallery submission does not have to be the same as the test image generated when your code is tested.</li>
+</ul>
+
+<p>We will be using GitHub Classroom to submit work. Each assignment with have a gh classroom link, clicking on it will create an assignment repository for you. This will work like any normal repository, so your github workflow should be the same. You just don’t need to worry about submitting your repository as a submodule are anything else.</p>
+
+<ul>
+  <li>For each assignment, I will provid frameworks for both c and python, these will be included when you create the assignment via GitHub classroom.</li>
+  <li>Also included at the root level is a <code class="language-plaintext highlighter-rouge">.gitignore</code> file that will prevent you from including image files in your submission. If your programming lanuage has temporary files (like <code class="language-plaintext highlighter-rouge">.pyc</code> files in python or <code class="language-plaintext highlighter-rouge">.o</code> files in c/c++), please add that to the .gitignore. The only files that should be pushed to GitHub are your makefile and any source code files.</li>
+  <li>Your makefile should like at the root level of your repository. I suggest this for your code as well, but some people do prefer using <code class="language-plaintext highlighter-rouge">/src</code> subdirectories, which is ok.</li>
+  <li>Remove all files that you are not using, so if you’re writing in python, get rid to the <code class="language-plaintext highlighter-rouge">base_c</code> directory and so on.</li>
+  <li>
+    <p>The provided source will also generate a test image. You can find this code in <code class="language-plaintext highlighter-rouge">main.c</code> or <code class="language-plaintext highlighter-rouge">main.py</code>, <strong>NO MATTER WHAT LANUAGE YOU USE</strong> your code must use the same inputs and generate the correct test image. A correct version of the image will be visible in the <a href="https://gallery.stuycs.org">gallery</a>.</p>
+  </li>
+  <li><strong>NEVER EVER EVER add image files to github</strong>, adding image files will result in deductions
+&lt;!–
+    <ul>
+      <li>All github submissions should be submodules in the correct period directory for the assignment. Please see the resources page for help on linking your own repository as a submodule.
+        <ul>
+          <li>You should maintain separate repositories for each assignment.</li>
+          <li>Submodule naming schema: <code class="language-plaintext highlighter-rouge">lastF0f1</code></li>
+          <li>e.g. <code class="language-plaintext highlighter-rouge">dyrland-weaverJon</code> or <code class="language-plaintext highlighter-rouge">konstantinovichSam</code> or <code class="language-plaintext highlighter-rouge">brooksPet</code></li>
+          <li>When working with a partner: <code class="language-plaintext highlighter-rouge">lastF0f1f2_lastF0f1f2</code></li>
+          <li>e.g. <code class="language-plaintext highlighter-rouge">brooksPet_dyrland-weaverJon</code></li>
+          <li><strong>The first name should always be the earlier name alphabetically</strong></li>
+          <li><strong>NEVER EVER EVER add image files to github</strong>, adding image files will result in deductions</li>
+          <li>I will include a useful .gitignore file at the root of each assignment repository, if you want, copy it and rename it to .gitignore in your repo.
+–&gt;</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Gallery submissions should be made here: <a href="http://gallery.stuycs.org">http://gallery.stuycs.org</a></li>
+</ul>
+
+<hr />
+
+<ul>
+  
+    <li>
+        <a class="assignment_link" href="../2022/05/25/a11.html">Work 11: Gettin' Giffy With It</a>
+          <h4 id="due">Due:</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/K9zgaLOa" target="blank">https://classroom.github.com/a/K9zgaLOa</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/ffs9dXbN" target="blank">https://classroom.github.com/a/ffs9dXbN</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/05/13/a10.html">Work 10: More Delightful Labor</a>
+          <h4 id="due-monday-523-800-am">Due: Monday 5/23 8:00 am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/nlYp8B8e" target="blank">https://classroom.github.com/a/nlYp8B8e</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/aSHSR-qF" target="blank">https://classroom.github.com/a/aSHSR-qF</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/04/28/a09.html">Work 09: Providing Illumination</a>
+          <h4 id="due-monday-59-800-am">Due: Monday 5/9 8:00 am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/csxjloyN" target="blank">https://classroom.github.com/a/csxjloyN</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/m92203bd" target="blank">https://classroom.github.com/a/m92203bd</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/04/12/a08.html">Work 08: Scanning for signs of life</a>
+          <h4 id="due-tuesday-426-800-am">Due: Tuesday, 4/26 8:00 am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/_rMZ0EJP" target="blank">https://classroom.github.com/a/_rMZ0EJP</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/3uy8qfo4" target="blank">https://classroom.github.com/a/3uy8qfo4</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/04/06/a07.html">Work 07: Let's see how your code stacks up to the competition</a>
+          <h4 id="due-tuesday-0412-800am">Due: Tuesday 04/12 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/f4nXBtCR" target="blank">https://classroom.github.com/a/f4nXBtCR</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/pZ3G9xzo" target="blank">https://classroom.github.com/a/pZ3G9xzo</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/03/28/a06.html">Work 06: If your shapes don't look solid, TRI a different ANGLE</a>
+          <h4 id="due-monday-0404-800am">Due: Monday 04/04 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/uyoutxth" target="blank">https://classroom.github.com/a/uyoutxth</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/qH9LVULm" target="blank">https://classroom.github.com/a/qH9LVULm</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/03/18/a05.html">Work 05: A Whole New Dimension</a>
+          <h4 id="due-thursday-0324-800am">Due: Thursday 03/24 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/770OuOUN" target="blank">https://classroom.github.com/a/770OuOUN</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/Mx3bnaUp" target="blank">https://classroom.github.com/a/Mx3bnaUp</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/03/10/a04.html">Work 04: It's spring training, time to work on your curve</a>
+          <h4 id="due-wednesday-0316-800am">Due: Wednesday 03/16 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/LZW3Fz3h" target="blank">https://classroom.github.com/a/LZW3Fz3h</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/SF62KVgj" target="blank">https://classroom.github.com/a/SF62KVgj</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/03/02/a03.html">Work 03: Transformations, more than meets the eye!</a>
+          <h4 id="due-wednesday-0309-800am">Due: Wednesday 03/09 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/AFEyT8E2" target="blank">https://classroom.github.com/a/AFEyT8E2</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/eyB3iJEE" target="blank">https://classroom.github.com/a/eyB3iJEE</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/02/16/a02.html">Work 02: Enter the Matrix</a>
+          <h4 id="due-tuesday-0301-800am">Due: Tuesday 03/01 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/mi0J4QLr" target="blank">https://classroom.github.com/a/mi0J4QLr</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/a0m6mELV" target="blank">https://classroom.github.com/a/a0m6mELV</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/02/10/a01.html">Work 01: Because it's time, you'll make a line</a>
+          <h4 id="due-tuesday-0215-800am">Due: Tuesday 02/15 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/0aSrCPMb" target="blank">https://classroom.github.com/a/0aSrCPMb</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/8nhNrTnX" target="blank">https://classroom.github.com/a/8nhNrTnX</a></h4>
+
+
+          <hr />
+    </li>
+  
+    <li>
+        <a class="assignment_link" href="../2022/02/04/a00.html">Work 00: Imagine All the Pixels...</a>
+          <h4 id="due-monday-0207-800am">Due: Monday 02/07 8:00am</h4>
+
+<h4>Period 4 GitHub link: <a href="https://classroom.github.com/a/fcjaxala" target="blank">https://classroom.github.com/a/fcjaxala</a></h4>
+<h4>Period 5 GitHub link: <a href="https://classroom.github.com/a/1XQ65UbE" target="blank">https://classroom.github.com/a/1XQ65UbE</a></h4>
+
+
+          <hr />
+    </li>
+  
+</ul>
+
+  </div>
+
+</article>
+
+    </div>
+
+
+  </body>
+
+</html>

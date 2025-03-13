@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)../notes/#c-quickstart -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style"></style>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Notes | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="Notes">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Class website for Systems Level Programming">
+<meta property="og:description" content="Class website for Systems Level Programming">
+<link rel="canonical" href="../notes/">
+<meta property="og:url" content="../notes/">
+<meta property="og:site_name" content="Systems Level Programming">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Notes">
+<script type="application/ld+json">
+{"description":"Class website for Systems Level Programming","url":"../notes/","@type":"WebPage","headline":"Notes","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<div id="pinnacle-changing" class="pinnacle-changing-sidenav"></div></div><body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class="active">
+              <a href="..">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class="">
+              <a href="../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class="">
+              <a href="../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class="active">
+              <a href="../notes">Notes</a>
+            </li>
+            
+      
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Notes</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="systems-notes">Systems Notes</h1>
+
+<h4 id="00-c-quickstart"><a href="../notes/index.html#c-quickstart">00. C Quickstart</a></h4>
+<h4 id="01-printf"><a href="../notes/index.html#printf">01. printf</a></h4>
+<h4 id="02-pimiative-types"><a href="../notes/index.html#primitive-types">02. Pimiative Types</a></h4>
+<h4 id="03-operator-precedence"><a href="../notes/index.html#operator-precedence">03. Operator Precedence</a></h4>
+<h4 id="04-variables"><a href="../notes/index.html#variables">04. Variables</a></h4>
+<h4 id="05-declaring-and-defining-functions"><a href="../notes/index.html#declaring-and-defining-functions">05. Declaring and Defining Functions</a></h4>
+<h4 id="06-compiling-and-linking"><a href="../notes/index.html#compiling-and-linking">06. Compiling and Linking</a></h4>
+<h4 id="07-make"><a href="../notes/index.html#make">07. Make</a></h4>
+<h4 id="08-memory"><a href="../notes/index.html#memory">08. Memory</a></h4>
+<h4 id="09-memory-addresses"><a href="../notes/index.html#memory-addresses">09. Memory Addresses</a></h4>
+<h4 id="10-more-printf"><a href="../notes/index.html#more-printf">10. More <code class="language-plaintext highlighter-rouge">printf</code></a></h4>
+<h4 id="11-poniters"><a href="../notes/index.html#pointers">11. Poniters</a></h4>
+<h4 id="12-endianness"><a href="../notes/index.html#endianness">12. Endianness</a></h4>
+<h4 id="13-arrays"><a href="../notes/index.html#arrays">13. Arrays</a></h4>
+<h4 id="14-array-variables"><a href="../notes/index.html#array-variables">14. Array Variables</a></h4>
+<h4 id="15-functions"><a href="../notes/index.html#functions">15. Functions</a></h4>
+<h4 id="16-strings"><a href="../notes/index.html#stirngs-in-c">16. Strings</a></h4>
+<h4 id="17-structs"><a href="../notes/index.html#struct">17. Structs</a></h4>
+<h4 id="18-stack-and-heap-memory"><a href="../notes/index.html#stack-and-heap-memory">18. Stack and Heap Memory</a></h4>
+<h4 id="19-file-functions"><a href="../notes/index.html#file-functions">19. File Functions</a></h4>
+<h4 id="20-input"><a href="../notes/index.html#input">20. Input</a></h4>
+<h4 id="21-signals"><a href="../notes/index.html#signals">21. Signals</a></h4>
+<h4 id="22-exec"><a href="../notes/index.html#exec">22. Exec</a></h4>
+<h4 id="23-fork--wait"><a href="../notes/index.html#managing-sub-processes">23. Fork &amp; Wait</a></h4>
+<h4 id="24-redirection"><a href="../notes/index.html#redirection">24. Redirection</a></h4>
+<h4 id="25-system-v-ipc"><a href="../notes/index.html#system-v-ipc">25. System V IPC</a></h4>
+<h4 id="26-shared-memory"><a href="../notes/index.html#shared-memory">26. Shared Memory</a></h4>
+<h4 id="27-semaphores"><a href="../notes/index.html#semaphores">27. Semaphores</a></h4>
+<h4 id="28-pipes"><a href="../notes/index.html#pipes">28. Pipes</a></h4>
+<h4 id="29-pipe-networking"><a href="../notes/index.html#pipe-networking">29. Pipe Networking</a></h4>
+<h4 id="30-sockets"><a href="../notes/index.html#sockets">30. Sockets</a></h4>
+<h4 id="31-select"><a href="../notes/index.html#select">31. Select</a></h4>
+<hr>
+
+<h3 id="c-quickstart">C Quickstart</h3>
+<ul>
+  <li>By convention, C source files should have a <code class="language-plaintext highlighter-rouge">.c</code> file extension (i.e. <code class="language-plaintext highlighter-rouge">dylan.c</code>).</li>
+  <li>The C compiler we will be using is <strong>gcc</strong> (the Gnu C Compiler)</li>
+  <li>usage: <code class="language-plaintext highlighter-rouge">$ gcc dylan.c</code>
+    <ul>
+      <li>This will create a standalone executable file.</li>
+      <li>The default name for the output file is <code class="language-plaintext highlighter-rouge">a.out</code></li>
+      <li>There is no preferred extension for c executable files (think about programs like <code class="language-plaintext highlighter-rouge">ls</code>, <code class="language-plaintext highlighter-rouge">ssh</code>, <code class="language-plaintext highlighter-rouge">chmod</code>, these are all C programs, notice the lack of file extension).</li>
+      <li>You can provide your own output file name with the <code class="language-plaintext highlighter-rouge">-o</code> flag.
+        <ul>
+          <li>usage: <code class="language-plaintext highlighter-rouge">$ gcc -o dj dylan.c</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Compiled C programs are natively executable, to run them just type <code class="language-plaintext highlighter-rouge">./program</code> (i.e. <code class="language-plaintext highlighter-rouge">$ ./a.out</code> or <code class="language-plaintext highlighter-rouge">$ ./dj</code></li>
+  <li>The <code class="language-plaintext highlighter-rouge">./</code> is only needed because you probably compiled the file in a folder outside your PATH environment variable (if that is unclear, you can forget the previous sentence entirely for now).</li>
+  <li>Before moving on, you should write, compile and run the example program provided above. I promise it is 100% sytactically correct. (Yes, you may get a compiler warning message, this is the only time you’re allowed to ignore it.</li>
+</ul>
+
+<h5 id="back-to-top"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="printf">printf</h3>
+<ul>
+  <li>The thinking person’s <code class="language-plaintext highlighter-rouge">System.out.println</code></li>
+  <li><code class="language-plaintext highlighter-rouge">printf</code> is the function normally used in C to print to standard out.</li>
+  <li>usage: <code class="language-plaintext highlighter-rouge">printf( string, arg0, arg1, ...)</code>
+    <ul>
+      <li>Sends <code class="language-plaintext highlighter-rouge">string</code> to standard out.</li>
+      <li>The first argument must be a literal string enclosed by <code class="language-plaintext highlighter-rouge">"</code>, as in the example program above.</li>
+      <li><code class="language-plaintext highlighter-rouge">string</code> can contain special placeholder characters that are used to insert other values into the output.</li>
+      <li><code class="language-plaintext highlighter-rouge">%d</code> is the placeholder to display a value as an <code class="language-plaintext highlighter-rouge">int</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">%lf</code> is the placeholder to display a value as a <code class="language-plaintext highlighter-rouge">double</code>.</li>
+      <li>There are other placeholder characters that we will see later on.</li>
+      <li>If placeholder characters are used, then they will be replaced by the arguments following the string when <code class="language-plaintext highlighter-rouge">printf</code> is executed.</li>
+      <li>The value arguments can be either variables or literal values.</li>
+      <li>example: <code class="language-plaintext highlighter-rouge">printf(“these are numbers: %d %lf\n”, 3, 845.273);</code> would display: <code class="language-plaintext highlighter-rouge">these are numbers: 3 845.273</code></li>
+    </ul>
+  </li>
+  <li>Once you get used to it, most people prefer <code class="language-plaintext highlighter-rouge">printf</code>’s value replacement system to Java’s string concatenation (+) inside <code class="language-plaintext highlighter-rouge">System.out.println</code>. In fact, Java does have a <code class="language-plaintext highlighter-rouge">System.out.printf</code> because of it.</li>
+  <li>There is one difference between <code class="language-plaintext highlighter-rouge">System.out.println</code> and <code class="language-plaintext highlighter-rouge">printf</code> that you will find annoying. I leave it for you to discover…</li>
+  <li>As an exercise, add some <code class="language-plaintext highlighter-rouge">printf</code> statements to your existing example program. Try declaring variables and printing their values. Once you get the hang of it, try using the wrong formatting characters, see what happens…</li>
+  <li>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Placeholder</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">int</code></td>
+          <td><code class="language-plaintext highlighter-rouge">%d</code></td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">long</code></td>
+          <td><code class="language-plaintext highlighter-rouge">%ld</code></td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">float</code></td>
+          <td><code class="language-plaintext highlighter-rouge">%f</code>*</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">double</code></td>
+          <td><code class="language-plaintext highlighter-rouge">%lf</code>*</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">char</code></td>
+          <td><code class="language-plaintext highlighter-rouge">%c</code></td>
+        </tr>
+        <tr>
+          <td>string</td>
+          <td><code class="language-plaintext highlighter-rouge">%s</code></td>
+        </tr>
+        <tr>
+          <td>pointer</td>
+          <td><code class="language-plaintext highlighter-rouge">%p</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>* <code class="language-plaintext highlighter-rouge">%0.xf</code> or <code class="language-plaintext highlighter-rouge">%0.xlf</code> will print <code class="language-plaintext highlighter-rouge">x</code> significant digits after the floating point</li>
+</ul>
+
+<h5 id="back-to-top-1"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="primitive-types">Primitive Types</h3>
+<ul>
+  <li>All C primitives are numeric. The only differences are floating point vs. integer and size of variable in memory.</li>
+  <li>Size can be platform dependent</li>
+  <li><code class="language-plaintext highlighter-rouge">sizeof(type)</code> can be used to find the size in bytes (<code class="language-plaintext highlighter-rouge">stdlib.h</code>).</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Size (bytes)</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td>1</td>
+      <td>-128 –&gt; 127</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">short</code></td>
+      <td>2</td>
+      <td>-32,768 —-&gt; 32,767</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td>4</td>
+      <td>-2<sup>31</sup> –&gt; 2<sup>31</sup>-1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">long</code></td>
+      <td>8</td>
+      <td>-2<sup>63</sup> –&gt; 2<sup>63</sup>-1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>4</td>
+      <td>7 digits of precision</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td>8</td>
+      <td>14 digits of precision</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">char</code> is an integer type, but can be used to refer to character literals as well.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">char c = 97;</code> and <code class="language-plaintext highlighter-rouge">char c = 'a';</code> are both equally valid statements.</li>
+      <li>This also means you can perform arithmetic operations on chars natively.</li>
+    </ul>
+  </li>
+  <li>Variables can be declared as <code class="language-plaintext highlighter-rouge">unsigned</code>. Unsigned variables do not use a bit to store the sign of the number, making the lower bound 0 and increasing the upper bound.</li>
+  <li>Note there is no boolean type. In c, any number is a boolean value:
+    <ul>
+      <li><strong>0 is false</strong></li>
+      <li><strong>All other numeric values are true</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-2"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="operator-precedence">Operator Precedence</h3>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">() [] -&gt; .</code></li>
+  <li><code class="language-plaintext highlighter-rouge">! ~ ++ -- +(unary) -(unary) *(de-reference) &amp;(address of) (type cast) sizeof</code></li>
+  <li><code class="language-plaintext highlighter-rouge">* / %</code></li>
+  <li><code class="language-plaintext highlighter-rouge">+ -</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;&lt; &gt;&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&lt; &lt;= &gt; &gt;=</code></li>
+  <li><code class="language-plaintext highlighter-rouge">== !=</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&amp; (bitwise)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">^</code></li>
+  <li><code class="language-plaintext highlighter-rouge">|</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">||</code></li>
+  <li><code class="language-plaintext highlighter-rouge">?:</code></li>
+  <li><code class="language-plaintext highlighter-rouge">= += -= *= /= %= ^= |= &amp;= &lt;&lt;= &gt;&gt;=</code></li>
+</ol>
+
+<h4 id="back-to-top-3"><a href="../notes/index.html#">Back to top</a></h4>
+
+<h3 id="variables">Variables</h3>
+<ul>
+  <li>C is staically typed, meaning every variable must be given a type.</li>
+  <li>Variables must be declared before they are used.
+    <ul>
+      <li>You can assign a variable a value at declaration (i.e. <code class="language-plaintext highlighter-rouge">int x = 10;</code>)</li>
+    </ul>
+  </li>
+  <li><em>THERE IS NO DEFAULT VALUE FOR VARIABLES</em>
+    <ul>
+      <li>In Java, everything got initialized to 0, that’s a thing of the past.</li>
+      <li>Remember that declaring a variable means requesting a piece of memory to be used by your program of the corresponding variable size. (<code class="language-plaintext highlighter-rouge">int</code> means you are asking for 4 bytes of memory.)</li>
+      <li>If you do not initialize (provide a value for) a variable, its initial value will be whatever happens to be in the piece of memory that was assigned to your variable. Sometimes, that’s 0, sometimes it’s 2167354. Who knows?</li>
+      <li>This is cause for one of the most frustrating kind of programming errors in C. Normally, if you run the same program twice, you will get the same result. If you don’t initialize a variable, you could run the same program twice and get two different results, because you’re not guranteed that variable will have had the same value twice (common occurance: you run your program and get lucky, a variable is initialized to 0. Then I run your work and the program crashes or does not give the required result because the variable is initialized to some junk value).</li>
+    </ul>
+  </li>
+  <li>Variables can be declared as <code class="language-plaintext highlighter-rouge">unsigned</code> (i.e. <code class="language-plaintext highlighter-rouge">unsigned int u;</code>).
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">unsigned</code> variables have a lower bound of 0 and a higher upper bound than their signed counterparts.</li>
+      <li><code class="language-plaintext highlighter-rouge">unsigned char uc;</code> declares a 1 byte integer type that can hold any number in the range [0, 255] otherwise known as [0, 2^8 - 1], as in there are 8 bits used for the number.</li>
+      <li><code class="language-plaintext highlighter-rouge">unsigned</code> variables don’t need to set aside a bit for the sign of the value, hence the larger upper bound.</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-4"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="declaring-and-defining-functions">Declaring and Defining Functions</h3>
+<ul>
+  <li>Function and variable names are both examples or <em>identifiers</em>.</li>
+  <li>All identifiers must be declared before they can be used.</li>
+  <li>A function declaration provides its return type, name and parameters. This is also known as a function <em>header</em>.</li>
+  <li><code class="language-plaintext highlighter-rouge">double dylan(int jack);</code></li>
+</ul>
+
+<h3 id="compiling-and-linking">Compiling and Linking</h3>
+<ul>
+  <li>Compilers are more complex than straightforward source code –&gt; executable code translators, and have multiple components.</li>
+  <li>To start, we’ll look at three major pieces of gcc, the <strong>preprocessor</strong> <strong>compiler</strong> and the <strong>linker</strong>.</li>
+  <li><strong>Preprocessor</strong>
+    <ul>
+      <li>The preprocessor is, at it’s simplest interpretation, a text replacement system.</li>
+      <li>Modifies source code file with text, as opposed to binary data.</li>
+      <li>All preprocessor commands start with <code class="language-plaintext highlighter-rouge">#</code> (i.e. <code class="language-plaintext highlighter-rouge">#include &lt;stdio.h&gt;</code>)</li>
+      <li>Note that preprocessor directives do not end in <code class="language-plaintext highlighter-rouge">;</code></li>
+      <li>A few basic preprocessor directives
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">#include</code>
+            <ul>
+              <li>Adds the entire text of the included file.</li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">#define</code>
+            <ul>
+              <li>Usage: <code class="language-plaintext highlighter-rouge">#define TEXT REPLACEMENT</code></li>
+              <li>Will replace every instance of <code class="language-plaintext highlighter-rouge">TEXT</code> with the provided <code class="language-plaintext highlighter-rouge">REPLACEMENT</code>.</li>
+              <li>Examples:
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">#define PI 3.14159</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">#define MESSAGE "Hello!"</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">printf("%s, %f\n", MESSAGE, PI);</code> would turn into <code class="language-plaintext highlighter-rouge">printf("%s, %f\n", "Hello!", 31.14159);</code>.</li>
+                </ul>
+              </li>
+              <li>Note that define does not use <code class="language-plaintext highlighter-rouge">=</code>, becuase this is not an assignment.</li>
+              <li>You can also use <code class="language-plaintext highlighter-rouge">#define</code> to declare function-like macros.
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">#define MAX(a, b) a &gt; b ? a : b</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">MAX(x, y)</code> would turn into <code class="language-plaintext highlighter-rouge">x &gt; y ? x : y</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">#ifndef IDENTIFIER ... #endif</code>
+            <ul>
+              <li>Conditional preprocessor statement.</li>
+              <li>If <code class="language-plaintext highlighter-rouge">IDENTIFIER</code> is not defined (for the preprocessor), then include all the lines of code up to the <code class="language-plaintext highlighter-rouge">#endif</code>.</li>
+              <li>If <code class="language-plaintext highlighter-rouge">IDENTIFIER</code> is defined, skip everything up to the <code class="language-plaintext highlighter-rouge">#endif</code>.</li>
+              <li>Example
+                <pre><code class="language-C">#ifndef PI
+#define PI 3.14159
+#endif
+</code></pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Compiler</strong>
+    <ul>
+      <li>Turns C source code into binary code.</li>
+      <li>The result is <strong>not</strong> an executable program.</li>
+      <li>Only one C file is compiled at a time.</li>
+      <li>The compiler checks called functions against their declared hearders, but if a function is defined in a separate file, its code is <strong>not added</strong> at this step.</li>
+      <li><code class="language-plaintext highlighter-rouge">$ gcc -c &lt;FILE&gt;</code> will run the preprocessor and compile stages only, creating a non executable binary object file. The resulting file will have an extension of <strong>.o</strong>.</li>
+      <li>Since an executable is <em>not</em> created, you can successfully compile, via <code class="language-plaintext highlighter-rouge">$ gcc -c</code>, a C file that does not have a <code class="language-plaintext highlighter-rouge">main</code> function.</li>
+    </ul>
+  </li>
+  <li><strong>Linker</strong>
+    <ul>
+      <li>Combines compiled binary code from multiple files into a single executable program.</li>
+      <li>Will automatically look for standard library source code, or anything that can be included using <code class="language-plaintext highlighter-rouge">&lt;&gt;</code>.</li>
+      <li>If multiple definitions for any identifier is found, the linker will fail.</li>
+      <li>Must find <strong>one</strong> definition for <code class="language-plaintext highlighter-rouge">main</code>.</li>
+      <li>If you provide gcc multiple c files, it will compile each one individual and then run the linker on them together.</li>
+      <li>If you provide gcc any .o files, it will skip the compilation step for those files and then use them during linking.</li>
+      <li>You can mix and match .c and .o files for gcc, but it is not encouraged.</li>
+      <li>For example these would be good ways to compile a program, if you had files <code class="language-plaintext highlighter-rouge">foo.c goo.c boo.c</code>:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">$ gcc foo.c goo.c boo.c</code></li>
+          <li>or:
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gcc -c foo.c
+ $ gcc -c goo.c
+ $ gcc -c boo.c
+ $ gcc -o program foo.o goo.o boo.o
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-5"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="make">Make</h3>
+<ul>
+  <li>Command line tool to help automate building programs with multiple files and dependencies.</li>
+  <li>Only compiles files that have been modified, or that rely on modified files.</li>
+  <li>Compiling instructions and file dependencies are put into a <em>makefile</em>.</li>
+  <li>Running <code class="language-plaintext highlighter-rouge">$ make</code>, will look for a file called <em>makefile</em> (you can specify a different file with the <code class="language-plaintext highlighter-rouge">-f</code> flag).</li>
+  <li>The main parts of makesfiles are:</li>
+  <li>Targets: Things to make (usually executables or .o files)</li>
+  <li>Dependencies: Files or other targets needed to create a target.</li>
+  <li>Rules: How to create the target.</li>
+  <li>Make will always run the first target.</li>
+  <li>Make recursively goes through dependencies.</li>
+  <li>Make will check the modification timestamps for <strong>targets</strong> and <strong>dependencies</strong> and will only run the <strong>rules</strong> if the target is older than one or more of its dependencies.</li>
+  <li>Makefile Syntax:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   target: dependency0 dependency1 dependency2 ...
+   TABrule
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>There should be a newline between the dependency list and the rules, and the <strong>TAB</strong> is necessary, there should not be any space between it and the rule.</p>
+  </li>
+  <li>Here is a makefile for a program made from three .c files: main.c, foo.c and goo.c.</li>
+  <li>main.c calls functions from foo.c</li>
+  <li>foo.c calls functions from goo.c
+    <pre><code class="language-Makefile">all: main.o foo.o goo.o
+    gcc -o program main.o foo.o goo.o
+
+main.o: main.c foo.h
+    gcc -c main.c
+
+foo.o: foo.c foo.h goo.h
+    gcc -c foo.c
+
+goo.o: goo.c goo.h
+    gcc -c goo.c
+</code></pre>
+  </li>
+  <li>This makefile creates the executable file <strong>program</strong>.</li>
+  <li>Since <em>all</em> is not a file and it is the first target, it will always run.
+    <ul>
+      <li>If instead, the first target was called <strong>program</strong>, then make would check the modification timestamp of that file.</li>
+    </ul>
+  </li>
+  <li><strong>main.o</strong> is the first dependency, so make will go to that target.</li>
+  <li><strong>main.o</strong> depends on main.c and foo.h</li>
+  <li>The rest of the dependencies will go through in a similar way. Running <code class="language-plaintext highlighter-rouge">$ make</code> the first time would do the following:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc -c main.c
+gcc -c foo.c
+gcc -c goo.c
+gcc -o porgram main.o foo.o goo.o
+</code></pre></div>    </div>
+  </li>
+  <li>Notice the order of compilation and trace it through the makefile.</li>
+  <li>If goo.h is modified, the following would happen:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc -c foo.c
+gcc -c goo.c
+gcc -o porgram main.o foo.o goo.o
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h5 id="back-to-top-6"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="memory">Memory</h3>
+<ul>
+  <li><strong>Bits &amp; Bytes</strong>
+    <ul>
+      <li>All digital data is <em>binary</em>, broken up into series of 1s and 0s.</li>
+      <li>Physically, this data can take many forms, electronic (high voltage | low voltage), optical (light on | light off), magnetic (+ | - magnetic charge) and so on.</li>
+      <li>A single 1 or 0 is a <strong>bit</strong>, a unit of digital data.</li>
+      <li>8 bits make a <strong>byte</strong>.
+        <ul>
+          <li>Why 8? - Some people thought that was a good number. It used to be 4.</li>
+        </ul>
+      </li>
+      <li>If you have a music file that is 5 MB (megabytes) large, that means it takes 5 million bytes, or 40 million bits to be represented digitally. That’s 40 million individual 1s and 0s in whatever physical form it may be.</li>
+    </ul>
+  </li>
+  <li><strong>Computer Memory 101</strong>
+    <ul>
+      <li>In order to get all this pointer stuff down, we have to be cool with understanding computer memory. So let’s do that.</li>
+      <li>In general, memory is the term used to describe the computer part that contains any active data. Active data includes things like:
+        <ul>
+          <li>All open applications, even ones running in the background.</li>
+          <li>All open files.</li>
+          <li>Operating system.</li>
+          <li>Background processes.</li>
+        </ul>
+      </li>
+      <li>Let’s say a computer has 4 gigabytes of memory, that means it can handle 4 billion bytes of data open at once.</li>
+      <li>The important distinction to be made is between <em>memory</em> and <em>storage</em>.
+        <ul>
+          <li><em>Storage</em> refers to data stored on disk (Hard Drive, SSD, Flash Drive, Floppy Disk…).</li>
+          <li>Storage is where data gets saved for the long term. At any given time, most computers will have a lot more data in storage than in memory.</li>
+          <li>For example, you might have the entire <a href="https://en.wikipedia.org/wiki/Pearl_Jam">Pearl Jam</a> discography stored on your hard drive, but you can only listen to one song at a time, so the song you’re currenlty listening to would be the only data in memory out of all the other songs in storage.</li>
+        </ul>
+      </li>
+      <li>Memory is much faster to access than storage, which is why it is used. THe downside is that memory is <em>volitile</em>, meaning it requires power to retain data (imagine losing everything when you shut your compuer off), and it’s much more expensive than storage.</li>
+      <li>The most common form of memory is RAM (Random Access Memory). The more RAM you have, the more data you can hape open at once.
+        <ul>
+          <li>Computers can use a concept called <em>virtual memory</em>, which will allocate unused disk space for memory purposes in the event that your RAM is full.</li>
+        </ul>
+      </li>
+      <li>When you open a program/file (in the *nix world, everthing is a file), the file is <strong>copied</strong> from storage into memory. Saving a file reverses this process, taking the changes you’ve made from memory and copying them into storage.</li>
+    </ul>
+  </li>
+  <li><strong>Interacting with Memory in your Programs</strong>
+    <ul>
+      <li>Just like any other program, when a program you write is run, it takes up memory space.</li>
+      <li>Every variable and function you write gets turned into bits which takes up memory space when run.</li>
+      <li>In this class, when we talk about the memory usage of a program, we will mostly be talking about variables.</li>
+      <li>For example, when you declare an <code class="language-plaintext highlighter-rouge">int</code>, that means your program will request 4 bytes of memory to store a value. See <a href="../notes/index.html#variables.md">variables</a> for the chart of types and sizes.</li>
+      <li>Some more detail on <a href="https://en.wikipedia.org/wiki/Endianness">endianness</a>:
+        <ul>
+          <li>Forgetting about computer data for a moment, think aboput normal decimal numbers. In the number 2,354 we would say 2 is the most significant digit, because that 2 represents 2 thousand, the largest value of any digit in that number.</li>
+          <li>Generally, we write decimal numbers left–&gt;right from most–&gt;least significant.</li>
+          <li>Endianness is a similar concept, except instead of thinking of the significance of digits, we look at the significance of <strong>bytes</strong>.
+            <ul>
+              <li>Consider the value <code class="language-plaintext highlighter-rouge">261</code>. In binary, that would be: <code class="language-plaintext highlighter-rouge">100000101</code>, which is a 9 bit number.</li>
+              <li>To store <code class="language-plaintext highlighter-rouge">261</code> in an <code class="language-plaintext highlighter-rouge">int</code>, C will use 4 bytes, so it would really look more like this:
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000001</code> <code class="language-plaintext highlighter-rouge">00000101</code></li>
+                </ul>
+              </li>
+              <li>Think about the significance of bytes in the same way you think about the significance of digits. In the above representation, the most significant byte comes first. Since we only need 9 bits (which is spread over 2 bytes) to represent <code class="language-plaintext highlighter-rouge">261</code>, the first two bytes are all <code class="language-plaintext highlighter-rouge">0</code>. The third byte, <code class="language-plaintext highlighter-rouge">00000001</code>, represents the number <code class="language-plaintext highlighter-rouge">256</code>.</li>
+              <li>Systems that use this representation are called <strong>big endian</strong>.</li>
+              <li>Other systems use the reverse order, going from least significant to most significant byte. These are called <strong>little endian</strong>.</li>
+              <li><code class="language-plaintext highlighter-rouge">261</code> in <strong>little endian</strong> format would be:
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">00000101</code> <code class="language-plaintext highlighter-rouge">00000001</code> <code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000000</code></li>
+                  <li>Notice that the indicidual bytes are in most-&gt;least significant bit order, but the order of the bytes is reversed.</li>
+                </ul>
+              </li>
+              <li>Another example, <code class="language-plaintext highlighter-rouge">2,151,686,160</code>
+                <ul>
+                  <li>Big endian: <code class="language-plaintext highlighter-rouge">10000000</code> <code class="language-plaintext highlighter-rouge">01000000</code> <code class="language-plaintext highlighter-rouge">00100000</code> <code class="language-plaintext highlighter-rouge">00010000</code></li>
+                  <li>Little endian: <code class="language-plaintext highlighter-rouge">00010000</code> <code class="language-plaintext highlighter-rouge">00100000</code> <code class="language-plaintext highlighter-rouge">01000000</code> <code class="language-plaintext highlighter-rouge">10000000</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="back-to-top-7"><a href="../notes/index.html#">Back to top</a></h4>
+<hr>
+
+<h3 id="memory-addresses">Memory Addresses</h3>
+<ul>
+  <li>In order to understand pointers, we need to take a closer look at what a variable is</li>
+  <li>There are three key features to any variable in your code:
+    <ol>
+      <li>The <strong>identifier</strong>: Name you use in code to refer to the variable.</li>
+      <li>The <strong>value</strong>: Data that you store.</li>
+      <li>The <strong>address</strong>: The location of data in memory.</li>
+    </ol>
+  </li>
+  <li>Let’s focus on the <strong>address</strong> (the following explanation is somewhat simplified, the nitty gritty details are not necessary to understand the concept)</li>
+  <li>Memory is addressed by starting at the first byte block (1), going up until the last accessible byte.
+    <ul>
+      <li>For example, if your computer has 4GB of RAM, then in theory memory addresses would go from 1 to ~32,000,000,000.</li>
+    </ul>
+  </li>
+  <li>The amount of potential memory addresses is limited by the processor, since a processor must be able to read an entire memory address within a single cycle. For modern, 64-bit computers, this means you could theorhetically have 2^64 bytes of memory, though this number is practically limited by hardware.</li>
+  <li>The address space of a program is determined by the operating system (OS), when the program is run. Therefore it can be different each time.</li>
+  <li>You can get the address of any variable using the <strong>address of operator</strong>: <code class="language-plaintext highlighter-rouge">&amp;</code>;</li>
+  <li>The <code class="language-plaintext highlighter-rouge">%p</code> placeholder character will print out a memory address in hexadecimal format: <code class="language-plaintext highlighter-rouge">printf("x: %d, address of x: %p\n", x, &amp;x);</code>.</li>
+  <li>If you would prefer to see the address in decimal, you can use the placeholder for an <code class="language-plaintext highlighter-rouge">unsigned long</code>. (This will most likely result in a warning from gcc): <code class="language-plaintext highlighter-rouge">printf("x: %d, address of x: %lu\n", x, &amp;x);</code>.</li>
+</ul>
+
+<h4 id="back-to-top-8"><a href="../notes/index.html#">Back to top</a></h4>
+<hr>
+
+<h3 id="more-printf">More <code class="language-plaintext highlighter-rouge">printf</code></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">printf</code> provides different ways of printing out values.</li>
+  <li>Remember that no matter how you write a number in your code, it is stored in memory in binary, so as far as <code class="language-plaintext highlighter-rouge">printf</code> is concerned, even printing out a value in decimal (base 10), requires translating the stored data.</li>
+  <li>There is no such thing as a “native” hexidecimal or decimal number. You write them in your code in some way, and they turn into binary when the program is compiled.</li>
+  <li>So <code class="language-plaintext highlighter-rouge">printf</code> takes the binary data, and displays it in a particular way based on the formatting character(s) provided.</li>
+  <li><code class="language-plaintext highlighter-rouge">%d</code> : print a value as a signed decimal <code class="language-plaintext highlighter-rouge">int</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">%u</code> : print a value as a decimal <code class="language-plaintext highlighter-rouge">unsigned int</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">%o</code> : print a value as an octal number.</li>
+  <li><code class="language-plaintext highlighter-rouge">%x</code> : print a value as a hexidecimal number.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">%o</code> and <code class="language-plaintext highlighter-rouge">%x</code> will always treat the value as if it were unsigned.</li>
+      <li>You can print a value out with <code class="language-plaintext highlighter-rouge">%u</code> or <code class="language-plaintext highlighter-rouge">%d</code> regardless of how it is declared, that doesn’t mean it will make sense, just that <code class="language-plaintext highlighter-rouge">printf</code> will convert the value accordingly.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">h</code> : modify the printed value to look at 2 bytes instead of 4.</li>
+  <li><code class="language-plaintext highlighter-rouge">hh</code> : modify the printed value to look at 1 byte.</li>
+  <li><code class="language-plaintext highlighter-rouge">h</code> and <code class="language-plaintext highlighter-rouge">hh</code> can modify <code class="language-plaintext highlighter-rouge">u</code>, <code class="language-plaintext highlighter-rouge">d</code>, <code class="language-plaintext highlighter-rouge">o</code> or <code class="language-plaintext highlighter-rouge">x</code>.</li>
+  <li>The code snippet below displays these options:
+    <pre><code class="language-C">unsigned int q = 2151686160;
+printf("%%d: %d\n", q);
+printf("%%u: %u\n", q);
+printf("%%o: %o\n", q);
+printf("%%x: %x\n", q);
+printf("%%hhx: %hhx\n", q);
+printf("%%hhu: %hhu\n", q);
+</code></pre>
+  </li>
+  <li>When run, this prints (on my computer):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%d: -2143281136
+%u: 2151686160
+%o: 20020020020
+%x: 80402010
+%hhx: 10
+%hhu: 16
+</code></pre></div>    </div>
+  </li>
+  <li>Things to notice:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">%d</code> is not the actual value we used, this has to do with how negative numbers are represented.</li>
+      <li><code class="language-plaintext highlighter-rouge">%hhx</code> and <code class="language-plaintext highlighter-rouge">%hhu</code> print the first byte of the value. Based on that, you can tell the endianness of the system the program is run on (it is possible you get a different result from my example).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="back-to-top-9">[Back to top]</h4>
+<hr>
+
+<h3 id="pointers">Pointers</h3>
+<ul>
+  <li>Regular variables are designed to store <em>values</em>.</li>
+  <li>Pointers are variables designed to store <em>memory addresses</em>.</li>
+  <li>Pointers are variables, meaning they are an identifier for a value stored in memory at a particular address (see above for detail), the only difference is that a pointer is designed to store an address.</li>
+  <li>Pointers must be able to store the value of any potential memory address. On 64 bit computers, this means pointers have to be able to represent 64 bits, or 8 bytes.</li>
+  <li>Pointers are designed for addresses, which means they are natively <code class="language-plaintext highlighter-rouge">unsigned</code>.</li>
+  <li>Even though all pointers are the same size, we declare them using the type of the value pointed to.</li>
+  <li><code class="language-plaintext highlighter-rouge">*</code> is used to declare a pointer variable.</li>
+  <li><code class="language-plaintext highlighter-rouge">int x = 5; int *p = &amp;x;</code></li>
+  <li>Here <code class="language-plaintext highlighter-rouge">p</code> is a pointer variable that stores the address of the variable <code class="language-plaintext highlighter-rouge">x</code>.</li>
+  <li>Notice that p is a normal variable, and has its own, different, memory address.</li>
+  <li>If you’re thinking, “hey, this looks familiar… like object variables in java”. You’re right! Object variables, or references, are java’s pointers. You just don’t have as much control over them as we do in C. In fact, think about the error you get when you try to use an uninitialized object variable in java… <em>null pointer</em>, meaning the reference stored is 0 (null), which is an invlaid memory address.</li>
+  <li><code class="language-plaintext highlighter-rouge">*</code> is also used as the <strong>de-reference operator</strong>. This will return the value stored at the memory address pointed to by the pointer.</li>
+  <li>Given the definitions of <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">p</code> above:</li>
+  <li><code class="language-plaintext highlighter-rouge">int y = *p + 10;</code> would set <code class="language-plaintext highlighter-rouge">y</code> to the value <code class="language-plaintext highlighter-rouge">15</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">*p = y;</code> would set the value at the memory address stored in <code class="language-plaintext highlighter-rouge">p</code>, to whatever the value stored in <code class="language-plaintext highlighter-rouge">y</code> is.</li>
+  <li>Consider the following C snippet:
+    <pre><code class="language-C">  unsigned int i = 2151686160;
+  int *ip = &amp;i;
+  char *cp = &amp;i;
+</code></pre>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">ip</code> and <code class="language-plaintext highlighter-rouge">cp</code> will store the address of the first byte used to store <code class="language-plaintext highlighter-rouge">i</code>. Depending on the <a href="https://en.wikipedia.org/wiki/Endianness">endianness</a> of the system, that byte will either be <code class="language-plaintext highlighter-rouge">10000000</code> (big) or <code class="language-plaintext highlighter-rouge">00010000</code> (little).</li>
+  <li>Let’s just say that the first byte is located at memory address <code class="language-plaintext highlighter-rouge">3000</code> (using small number for ease of discussion)</li>
+  <li>If you perform <code class="language-plaintext highlighter-rouge">ip++</code> and <code class="language-plaintext highlighter-rouge">cp++</code>, each pointer will be incremented by 1, but due to pointer arithmetic, <code class="language-plaintext highlighter-rouge">ip</code> will increase to <code class="language-plaintext highlighter-rouge">3004</code> and <code class="language-plaintext highlighter-rouge">cp</code> will increase to <code class="language-plaintext highlighter-rouge">3001</code>. In essence, <code class="language-plaintext highlighter-rouge">ip</code> would move one <code class="language-plaintext highlighter-rouge">int</code> forward in memory, while <code class="language-plaintext highlighter-rouge">cp</code> only moves one byte forward.</li>
+</ul>
+
+<h5 id="back-to-top-10"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="endianness">Endianness</h3>
+
+<ul>
+  <li>Some more detail on <a href="https://en.wikipedia.org/wiki/Endianness">endianness</a>
+    <ul>
+      <li>Forgetting about computer data for a moment, think aboput normal decimal numbers. In the number 2,354 we would say 2 is the most significant digit, because that 2 represents 2 thousand, the largest value of any digit in that number.</li>
+      <li>Generally, we write decimal numbers left–&gt;right from most–&gt;least significant.</li>
+      <li>Endianness is a similar concept, except instead of thinking of the significance of digits, we look at the significance of <strong>bytes</strong>.
+        <ul>
+          <li>Consider the value <code class="language-plaintext highlighter-rouge">261</code>. In binary, that would be: <code class="language-plaintext highlighter-rouge">100000101</code>, which is a 9 bit number.</li>
+          <li>To store <code class="language-plaintext highlighter-rouge">261</code> in an <code class="language-plaintext highlighter-rouge">int</code>, C will use 4 bytes, so it would really look more like this:
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000001</code> <code class="language-plaintext highlighter-rouge">00000101</code></li>
+            </ul>
+          </li>
+          <li>Think about the significance of bytes in the same way you think about the significance of digits. In the above representation, the most significant byte comes first. Since we only need 9 bits (which is spread over 2 bytes) to represent <code class="language-plaintext highlighter-rouge">261</code>, the first two bytes are all <code class="language-plaintext highlighter-rouge">0</code>. The third byte, <code class="language-plaintext highlighter-rouge">00000001</code>, represents the number <code class="language-plaintext highlighter-rouge">256</code>.</li>
+          <li>Systems that use this representation are called <strong>big endian</strong>.</li>
+          <li>Other systems use the reverse order, going from least significant to most significant byte. These are called <strong>little endian</strong>.</li>
+          <li><code class="language-plaintext highlighter-rouge">261</code> in <strong>little endian</strong> format would be:
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">00000101</code> <code class="language-plaintext highlighter-rouge">00000001</code> <code class="language-plaintext highlighter-rouge">00000000</code> <code class="language-plaintext highlighter-rouge">00000000</code></li>
+              <li>Notice that the indicidual bytes are in most-&gt;least significant bit order, but the order of the bytes is reversed.</li>
+            </ul>
+          </li>
+          <li>Another example, <code class="language-plaintext highlighter-rouge">2,151,686,160</code>
+            <ul>
+              <li>Big endian: <code class="language-plaintext highlighter-rouge">10000000</code> <code class="language-plaintext highlighter-rouge">01000000</code> <code class="language-plaintext highlighter-rouge">00100000</code> <code class="language-plaintext highlighter-rouge">00010000</code></li>
+              <li>Little endian: <code class="language-plaintext highlighter-rouge">00010000</code> <code class="language-plaintext highlighter-rouge">00100000</code> <code class="language-plaintext highlighter-rouge">01000000</code> <code class="language-plaintext highlighter-rouge">10000000</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-11"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="arrays">Arrays</h3>
+<ul>
+  <li>An array is an allocated block of memory meant to hold multiple pieces of data of the same type.</li>
+  <li>C arrays do not have a length attribute/function.</li>
+  <li>We will use <code class="language-plaintext highlighter-rouge">[]</code> to access array elements.</li>
+  <li>The size of an array must be set at declaration and cannot be changed.</li>
+  <li>The size of an array cannot be dyanmic.</li>
+  <li>There is no boundry checking (much more on this later).</li>
+  <li>Array declaraion/access syntax:
+    <pre><code class="language-C">   float ray[5];
+   ray[2] = 8.22;
+</code></pre>
+  </li>
+  <li>The above code requests a block of memory large enough for 5 <code class="language-plaintext highlighter-rouge">floats</code> (20 bytes), which then can be accessed using 0-based <code class="language-plaintext highlighter-rouge">[]</code> notation.</li>
+</ul>
+
+<h3 id="array-variables">Array Variables</h3>
+<ul>
+  <li>Array <em>varibles</em> (not the arrays themselves) are pointers to the allocated array block.</li>
+  <li>Unlike standard pointers, array variables are <strong>immutable</strong>, meaning that you can never change the memory address an array variable points to.</li>
+  <li>In the previous example, <code class="language-plaintext highlighter-rouge">ray</code> is a variable that points to the beginning of the 20 bytes allocated to that array of floats.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">sizeof</code> function can be used to find the size of a given type (like <code class="language-plaintext highlighter-rouge">float</code> or <code class="language-plaintext highlighter-rouge">char *</code>), or _the amount of memory associated with a given variable.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">sizeof(ray)</code> would return <code class="language-plaintext highlighter-rouge">20</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">sizeof(ray) / sizeof(float)</code> would return <code class="language-plaintext highlighter-rouge">5</code>. It is more standard in C <em>not</em> to use this, instead using other constants/variables to keep track of array sizes. Since array sizes must be set at compile time, you’re more likely to see something like this:
+        <pre><code class="language-C"> int ARR_SIZE = 10;
+ double trouble[ ARR_SIZE ];
+</code></pre>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="array-variables--pointers">Array Variables &amp; Pointers</h3>
+
+<ul>
+  <li>Since array variables are pointers, we can assign normal pointers to array variables.
+    <pre><code class="language-C">  float ray[5];
+  float *rp = ray;
+</code></pre>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">ray</code>, is immutable, so we <strong>could not</strong> do soemthing like <code class="language-plaintext highlighter-rouge">ray++</code>, but <code class="language-plaintext highlighter-rouge">rp</code> is a normal pointer, so we could do <code class="language-plaintext highlighter-rouge">rp++</code>. Due to <em>pointer arithmetic</em>, <code class="language-plaintext highlighter-rouge">rp++</code> would actually add <code class="language-plaintext highlighter-rouge">4</code> to <code class="language-plaintext highlighter-rouge">rp</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">sizeof(ray)</code> would return <code class="language-plaintext highlighter-rouge">20</code>, while <code class="language-plaintext highlighter-rouge">sizeof(rp)</code> would return <code class="language-plaintext highlighter-rouge">8</code>, since <code class="language-plaintext highlighter-rouge">rp</code> is a pointer and only holds an 8 byte (on most systems) memory address.</li>
+  <li>This is commonly done, and because of pointer arithmetic, you can iterate through an array by using a pointer and incrementing it.</li>
+</ul>
+
+<h3 id="array-indexing-and--notation">Array Indexing and <code class="language-plaintext highlighter-rouge">[]</code> Notation</h3>
+<ul>
+  <li>The following two pieces of code perform the same task.</li>
+  <li><code class="language-plaintext highlighter-rouge">ray[3]</code> and <code class="language-plaintext highlighter-rouge">*(rp + 3)</code></li>
+  <li>In the second example, we add <code class="language-plaintext highlighter-rouge">3</code> to <code class="language-plaintext highlighter-rouge">rp</code>, which is the same address as the location for <code class="language-plaintext highlighter-rouge">ray[3]</code>.</li>
+  <li>The de-reference operator (<code class="language-plaintext highlighter-rouge">*</code>), is then used to retrieve the value.</li>
+  <li>You can think of the standard <code class="language-plaintext highlighter-rouge">[]</code> notation in terms of specifying an offset from the beginning memory address of an array.</li>
+  <li>Arrays are 0-indexed because the first element is stored at the starting address, so you need not add to get to the correct memory address.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">a[i]</code> notation is actually shorthand for:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">*(a + i)</code>,</li>
+    </ul>
+  </li>
+  <li>This means that you can use <code class="language-plaintext highlighter-rouge">[]</code> with pointer variables as well.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">rp[3]</code> is valid code.</li>
+    </ul>
+  </li>
+  <li>You can write <code class="language-plaintext highlighter-rouge">ray[-1]</code> or <code class="language-plaintext highlighter-rouge">rp[-1]</code>, which would go to the value 4  bytes (one float size) before the beginning of your array.</li>
+  <li>If you use an index past the end of an array allocation, you will be attempting to access the memory addresses past the end of the array.</li>
+  <li>In either case, going past an array allocation on either end is not advised. Your code will compile, but when run, at best you’ll access other variables within the program, at worst, you’ll crash.</li>
+  <li><strong>WARNING: HORRIBLE SYNTAX AHEAD</strong>
+    <ul>
+      <li>Once again, <code class="language-plaintext highlighter-rouge">*(a + i)</code> is the same as <code class="language-plaintext highlighter-rouge">a[i]</code></li>
+      <li><code class="language-plaintext highlighter-rouge">+</code> is a commutative operations, meaning <code class="language-plaintext highlighter-rouge">a + i</code> == <code class="language-plaintext highlighter-rouge">i + a</code></li>
+      <li>…</li>
+      <li><code class="language-plaintext highlighter-rouge">*(a + i)</code> == <code class="language-plaintext highlighter-rouge">*(i + a)</code></li>
+      <li><code class="language-plaintext highlighter-rouge">*(i + a)</code> == <code class="language-plaintext highlighter-rouge">i[a]</code></li>
+      <li>So <code class="language-plaintext highlighter-rouge">ray[2]</code> can also be written as <code class="language-plaintext highlighter-rouge">2[ray]</code>. Try it once, then NEVER DO IT AGAIN!</li>
+      <li>Use this knowledge wisely.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="back-to-top-12"><a href="../notes/index.html#">Back to top</a></h4>
+<hr>
+
+<h3 id="c-functions">C Functions</h3>
+<ul>
+  <li>All functions in C are <em>pass by value</em>.
+    <ul>
+      <li>This means that the arguments are <strong>copied</strong> into new variables when the function is called.</li>
+      <li>As a result, normal values are not modified when passed into a funtion. Consider this function to swap two values:
+        <pre><code class="language-C">void swap(int a, int b) {
+   int t = a;
+   a = b;
+   b = t;
+}
+
+//later on...
+int x = 10;
+int y = 5;
+swap(x, y);
+</code></pre>
+      </li>
+      <li>In this example, when <code class="language-plaintext highlighter-rouge">swap</code> is run on <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>, <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> are created. The function swaps the values of <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>, but once the function finishes, it is popped off the call stack, and <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> are gone. <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> are left unchanged.</li>
+    </ul>
+  </li>
+  <li>This is where pointers come in handy. If you pass a pointer to a memory address, then you can modify the value it points to. Look at this modified version of swap.
+    <pre><code class="language-C">  void swap(int *a, int *b) {
+     int t = *a;
+     *a = *b;
+     *b = t;
+  }
+
+  //later on...
+  int x = 10;
+  int y = 5;
+  swap(&amp;x, &amp;y);
+</code></pre>
+    <ul>
+      <li>Now that <code class="language-plaintext highlighter-rouge">swap</code> takes pointers, we can de-reference the parameters to get at the values pointed to. When the function is colled, <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> become copies of the <em>adrresses</em> of <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>, so when <code class="language-plaintext highlighter-rouge">swap</code> finishes, the values will actaully be swapped.</li>
+    </ul>
+  </li>
+  <li>Passing pointers as arguments is actually waht happens in java when object variables are used, you may recall the phrase <em>pass by reference</em>, all that means is pass by value, but the value being passed is a memory address.</li>
+  <li>When you pass an array as a argument to a function, the entire array is <em>not</em> copied. Since array variables are pointers, all arrays are treated as regular pointers when passed into a function. The following function headers are equivalent:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">void arr_func( int arr[]);</code></li>
+      <li><code class="language-plaintext highlighter-rouge">void point_func( int *arr);</code></li>
+      <li>It is generally preferred to use the second option, since it makes clear that the parameter is a normal pointer. It is possible to use the first option and think that something special is going on due to the array notation (but nothing is).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="back-to-top-13"><a href="../notes/index.html#">Back to top</a></h4>
+<hr>
+
+<h3 id="strings-in-c">Strings in C</h3>
+<ul>
+  <li>Strings are character arrays.</li>
+  <li>There is nothing special about the way character arrays work. Becuase strings are so useful, there are a few features of C that make working with them simpler.</li>
+  <li>By <strong>convention</strong> the last entry in a string character array is the NULL character (either <code class="language-plaintext highlighter-rouge">0</code>, the number, or <code class="language-plaintext highlighter-rouge">\0</code>, the character). This is not something that is guranteed, if you want to create a string, you will need to make sure that there is a terminating NULL, if not, a number of string related functions will not work.</li>
+  <li>When you use <code class="language-plaintext highlighter-rouge">""</code> to make a string <em>literal</em>:
+    <ol>
+      <li>A character array large enough to store the string, including a terminating NULL, is created in memory.</li>
+      <li>The characters of the string are stored in that array, and a terminating NULL is added.</li>
+    </ol>
+  </li>
+  <li>String literals are <em>immutable</em>.</li>
+  <li>
+    <p>If a string literal is exactly repeated in code, a new character array is not created, instead, the orginal array is used. This means all references to the same immutable string literal refer to the same piece of memory.</p>
+  </li>
+  <li><strong>Declaring Strings</strong>
+    <ul>
+      <li>There are 4 ways to declare strings in C (in eaxch example, the numbers and strings used are randomly chosen, none have special meaning in C).</li>
+      <li><code class="language-plaintext highlighter-rouge">char s[256];</code>
+        <ul>
+          <li>Declares a mutable array of 256 bytes.</li>
+          <li>No speciic characters are saved to memory.</li>
+          <li>No guarantee of a NULL character at any position.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">char s[256] = "Imagine"</code>
+        <ul>
+          <li>Creates the immutable string literal <code class="language-plaintext highlighter-rouge">"Imagine"</code>.</li>
+          <li>Declares a mutable array of 256 bytes.</li>
+          <li><strong>Copies</strong> the string <code class="language-plaintext highlighter-rouge">"Imagine"</code>, including a terminating NULL, into the first 8 bytes of the array <code class="language-plaintext highlighter-rouge">s</code>.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">char s[] = "Tuesday";</code>
+        <ul>
+          <li>Creates the immutable string literal <code class="language-plaintext highlighter-rouge">"Tuesday"</code>.</li>
+          <li>Creates an 8 bytes array, large enough for <code class="language-plaintext highlighter-rouge">"Tuesday"</code> and a terminating NULL for the variable <code class="language-plaintext highlighter-rouge">s</code>.</li>
+          <li><strong>Copies</strong> the string <code class="language-plaintext highlighter-rouge">"Tuesday"</code>, including a terminating NULL, into the array <code class="language-plaintext highlighter-rouge">s</code>.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">char *s = "Mankind";</code>
+        <ul>
+          <li>Creates the immutable stirng literal <code class="language-plaintext highlighter-rouge">"Mankind"</code>.</li>
+          <li><code class="language-plaintext highlighter-rouge">s</code> becomes a pointer to that immutable string.</li>
+        </ul>
+      </li>
+      <li>It is important to note that in the last example, an array is not created. In that case <code class="language-plaintext highlighter-rouge">s</code> is just a pointer to the memory location with the immutable string lives. If you want a mutable string, you cannot declare it this way.</li>
+    </ul>
+  </li>
+  <li><strong>Working With String Variables</strong>
+    <ul>
+      <li>Everything we’ve covered about pointers and arrays still holds true, string variables are pointers, either array pointers or normal pointers.</li>
+      <li>It is important to keep track of <em>variables</em> vs. <em>values</em>.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">char s[10] = "Yankees";</code>
+            <ul>
+              <li>In this example, <code class="language-plaintext highlighter-rouge">s</code> is an array variable that points to the 10 byte array allocation. <code class="language-plaintext highlighter-rouge">s</code>.</li>
+              <li><code class="language-plaintext highlighter-rouge">s</code> is immutable, it cannot point to any other memory location.
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">s = "Mets";</code> <strong>is an error</strong>.</li>
+                </ul>
+              </li>
+              <li>The values in the array <code class="language-plaintext highlighter-rouge">s</code> points to are <strong>not</strong> immutable. You can change the value of the string at any point.
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">s[0] = 'M';</code> is perfectly good.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">char *s = "AL East Champions";</code>
+            <ul>
+              <li>Here, <code class="language-plaintext highlighter-rouge">s</code> is a pointer.</li>
+              <li>As a pointer, you can change the value <code class="language-plaintext highlighter-rouge">s</code> points to.
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">s = "The Best";</code> is valid.</li>
+                </ul>
+              </li>
+              <li>Since <code class="language-plaintext highlighter-rouge">s</code> points to an immutable string literal, you cannot change the value of the string.
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">s[0] = 'N';</code> <strong>is an error</strong>.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-14"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="struct">struct</h3>
+
+<ul>
+  <li>A <code class="language-plaintext highlighter-rouge">struct</code> is a custom data type that is a collection of values.</li>
+  <li>The following line creates a variable, <code class="language-plaintext highlighter-rouge">s</code>, who’s type is an anonymous struct:</li>
+  <li><code class="language-plaintext highlighter-rouge">struct { int a; char x; } s;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">struct { int a; char x; }</code> is the full type of <code class="language-plaintext highlighter-rouge">s</code>, it is syntactically identical to <code class="language-plaintext highlighter-rouge">int</code> or <code class="language-plaintext highlighter-rouge">float</code> …</li>
+  <li>We use the <code class="language-plaintext highlighter-rouge">.</code> operator to access a value inside a struct</li>
+  <li><code class="language-plaintext highlighter-rouge">s.a = 10;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">s.x = ‘@‘;</code></li>
+  <li>
+    <p>Here is an example of creating and using a struct:</p>
+
+    <pre><code class="language-C"> int main() {
+     struct {int a; char x;} s0;
+
+     s0.a = 51;
+     s0.x = '%';
+
+     printf("s0: %d\t%c\n", s0.a, s0.x);
+
+     return 0;
+  }
+</code></pre>
+  </li>
+  <li>It is preferable to <strong>prototype</strong> your structs, which will make it easier to create and work with multiple variables of the same struct type.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">struct foo { int a; char x; };</code></li>
+      <li>Note that since we are not creating a variable, there is no name between the <code class="language-plaintext highlighter-rouge">}</code> and the <code class="language-plaintext highlighter-rouge">;</code> at the end.</li>
+    </ul>
+  </li>
+  <li>After creating a prototye for a struct, you can declare new variables of that type like so:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">struct foo s;</code></li>
+      <li>You still must include the word <code class="language-plaintext highlighter-rouge">struct</code>.</li>
+    </ul>
+  </li>
+  <li>It is typically better practice to prototype structs outside of any particular function.
+    <ul>
+      <li>Struct prototypes are most commonly found in .h files.</li>
+    </ul>
+  </li>
+  <li>Here is an example of creating and using a struct with a prototype:
+    <pre><code class="language-C"> struct foo {int a; char x;};
+
+ int main() {
+
+     struct foo s0;
+     struct foo s1;
+
+     s0.a = 51;
+     s0.x = '%';
+
+     s1 = s0;
+     printf("s0: %d\t%c\n", s0.a, s0.x);
+     printf("s1: %d\t%c\n", s1.a, s1.x);
+
+     return 0;
+  }
+</code></pre>
+  </li>
+  <li><strong>Pointers and Structs</strong>
+    <ul>
+      <li>You can make pointers to structs like pointers to primitaves.</li>
+      <li><code class="language-plaintext highlighter-rouge">struct foo *p = &amp;s;</code></li>
+      <li>One very important note, <code class="language-plaintext highlighter-rouge">.</code> takes precedence over <code class="language-plaintext highlighter-rouge">*</code>.</li>
+      <li>This means that <code class="language-plaintext highlighter-rouge">*p.x</code> is the same as <code class="language-plaintext highlighter-rouge">*(p.x)</code> which is almost certainly <strong>NOT</strong> what you want. (This will look for x inside p and de-reference that result).</li>
+      <li>To access a value in a struct via a pointer you need to do: <code class="language-plaintext highlighter-rouge">(*p).x</code>, that is, de-reference first, then get x.</li>
+      <li>In C, <code class="language-plaintext highlighter-rouge">p-&gt;x</code> is syntactic shorthand for <code class="language-plaintext highlighter-rouge">(*p).x</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-15"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+<h3 id="stack-and-heap-memory">Stack and Heap Memory</h3>
+<ul>
+  <li>Every program can have its own stack and heap.</li>
+  <li><strong>Stack memory</strong>
+    <ul>
+      <li>Stores all normally declared variables (including pointers and structs), arrays and function calls.</li>
+      <li>Functions are pushed onto the stack in the order they are called, and popped off when completed.</li>
+      <li>When a function is popped off the stack, the stack memory associated with it is released.</li>
+    </ul>
+  </li>
+  <li><strong>Heap memory</strong>
+    <ul>
+      <li>Stores dynamically allocated memory.</li>
+      <li>Data will remain in the heap until it is manually released. (or the program terminates)</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic memory allocation</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">malloc(size_t x)</code>
+        <ul>
+          <li>Allocates x bytes of heap memory.</li>
+          <li>Returns the address at the beginning of the allocation</li>
+          <li>
+            <p>Returns a <code class="language-plaintext highlighter-rouge">void *</code></p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int *p;
+  p = malloc( 5 * sizeof(int) );
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">free(void * p)</code>
+        <ul>
+          <li>Releases dynamically allocated memory.</li>
+          <li>Has one parameter, a pointer to the beginning of a dynamically allocated block of memory.</li>
+          <li>Every call to malloc/calloc should have a corresponding call to free.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">calloc(size_t n, size_t x)</code>
+        <ul>
+          <li>Allocates n * x bytes of memory, ensuring every bit is 0.</li>
+          <li>
+            <p>Works like malloc in all other ways</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int *p;
+  p = calloc( 5, sizeof(int) );
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">realloc(void *p, size_t x)</code>
+        <ul>
+          <li>Changes the amount of memory allocated for a block to x bytes.</li>
+          <li><code class="language-plaintext highlighter-rouge">p</code> must point to the beginning of a block.</li>
+          <li>Returns a pointer to the beginning of the block (this is not always the same as <code class="language-plaintext highlighter-rouge">p</code>)</li>
+          <li>If <code class="language-plaintext highlighter-rouge">x</code> is smaller than the original size of the allocation, the extra bytes will be released.</li>
+          <li>If <code class="language-plaintext highlighter-rouge">x</code> is larger than the original size then either:
+            <ul>
+              <li>If there is enough space at the end of the original allocation, the original allocation will be updated.</li>
+              <li>If there is not enough space, a new allocation will be created, containing all the original values. The original allocation will be freed.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-16"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="file-functions">File functions</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">open - &lt;fcntl.h&gt;</code>
+    <ul>
+      <li>Add a file to the file table and returns its file descriptor.</li>
+      <li>This will make the file accessible within a program via the returned file descriptor.</li>
+      <li>If open fails, -1 is returned, extra error information can be found in <code class="language-plaintext highlighter-rouge">errno</code>.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">errno</code> is an int variable that can be found in <code class="language-plaintext highlighter-rouge">&lt;errno.h&gt;</code></li>
+          <li>Use <code class="language-plaintext highlighter-rouge">strerror</code> (in <code class="language-plaintext highlighter-rouge">string.h</code>) on errno to return a string description of the error</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">open( path, flags, mode )</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">mode</code>
+            <ul>
+              <li>Only used when creating a file. Set the new file’s permissions using a 3 digit octal #</li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">flags</code>
+            <ul>
+              <li>Determine what you plan to do with the file, use the following constants and combine with <code class="language-plaintext highlighter-rouge">|</code>:</li>
+              <li><code class="language-plaintext highlighter-rouge">O_RDONLY</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_WRONLY</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_RDWR</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_APPEND</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_TRUNC</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_CREAT</code></li>
+              <li><code class="language-plaintext highlighter-rouge">O_EXCL</code>: when combined with <code class="language-plaintext highlighter-rouge">O_CREAT</code>, will return an error if the file exists</li>
+            </ul>
+          </li>
+          <li>examples:
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">open(foo.txt, O_RDONLY, 0)</code></li>
+              <li><code class="language-plaintext highlighter-rouge">open(goo.txt, O_WRONLY | O_APPEND | O_CREAT, 0644)</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">read - &lt;unistd.h&gt;</code>
+    <ul>
+      <li>Read data from a file</li>
+      <li><code class="language-plaintext highlighter-rouge">read( fd, buff, n )</code>
+        <ul>
+          <li>Read <code class="language-plaintext highlighter-rouge">n</code> bytes from <code class="language-plaintext highlighter-rouge">fd</code>’s file into <code class="language-plaintext highlighter-rouge">buff</code></li>
+          <li>Returns the number of bytes actually read. Returns -1 and sets <code class="language-plaintext highlighter-rouge">errno</code>	if unsuccessful.</li>
+          <li><code class="language-plaintext highlighter-rouge">buff</code> must be a memory address (pointer or array), but can be to any type of data.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">write - &lt;unistd.h&gt;</code>
+    <ul>
+      <li>Write data to a file</li>
+      <li><code class="language-plaintext highlighter-rouge">write( fd, buff, n )</code>
+        <ul>
+          <li>Write <code class="language-plaintext highlighter-rouge">n</code> bytes to the <code class="language-plaintext highlighter-rouge">fd</code>’s file from <code class="language-plaintext highlighter-rouge">buff</code></li>
+          <li>Returns the number of bytes actually written. Returns -1 and sets <code class="language-plaintext highlighter-rouge">errno</code>	if unsuccessful.</li>
+          <li><code class="language-plaintext highlighter-rouge">buff</code> must be a memory address (pointer or array), but can be to any type of data.</li>
+          <li><code class="language-plaintext highlighter-rouge">lseek - &lt;unistd.h&gt;</code>
+            <ul>
+              <li>Set the current position in an open file</li>
+              <li><code class="language-plaintext highlighter-rouge">lseek( file_descriptor, offset, whence )</code>
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">offset</code>
+                    <ul>
+                      <li>Number of bytes to move the position by, Can be negative.</li>
+                    </ul>
+                  </li>
+                  <li><code class="language-plaintext highlighter-rouge">whence</code>
+                    <ul>
+                      <li>Where to measure the offset from</li>
+                      <li><code class="language-plaintext highlighter-rouge">SEEK_SET</code>: offset is evaluated from the beginning of the file</li>
+                      <li><code class="language-plaintext highlighter-rouge">SEEK_CUR</code>: offset is relative to the current position in the file</li>
+                      <li><code class="language-plaintext highlighter-rouge">SEEK_END</code>: offset is evaluated from the end of the file</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Returns the number of bytes the current position is from the beginning of the file, or -1 (<code class="language-plaintext highlighter-rouge">errno</code>)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">stat - &lt;sys/stat.h&gt;	</code>
+    <ul>
+      <li>Get information about a file (metadata)</li>
+      <li><code class="language-plaintext highlighter-rouge">stat( path, stat_buffer )</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">stat_buffer</code>
+            <ul>
+              <li>Must be a pointer to a <code class="language-plaintext highlighter-rouge">struct stat</code></li>
+              <li>All the file information gets put into the stat buffer.</li>
+              <li>Some of the fields in struct stat:
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">st_size</code>: file size in bytes</li>
+                  <li><code class="language-plaintext highlighter-rouge">st_uid, st_gid</code>: user id, group id</li>
+                  <li><code class="language-plaintext highlighter-rouge">st_mode</code>: file permissions</li>
+                  <li><code class="language-plaintext highlighter-rouge">st_atime, st_mtime</code>: last access, last modification
+                    <ul>
+                      <li>These are <code class="language-plaintext highlighter-rouge">time_t</code> variables. We can use functions in <code class="language-plaintext highlighter-rouge">time.h</code> to make sense of them</li>
+                      <li><code class="language-plaintext highlighter-rouge">ctime( time )</code>
+                        <ul>
+                          <li>Returns the time as a string</li>
+                          <li><code class="language-plaintext highlighter-rouge">time</code> is type <code class="language-plaintext highlighter-rouge">time_t *</code></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">opendir - &lt;dirent.h&gt;</code>
+    <ul>
+      <li>Open a directory file</li>
+      <li>This will not change the current working directory (cwd), it only allows your program to read the contents of the directory file</li>
+      <li><code class="language-plaintext highlighter-rouge">opendir( path )</code>
+        <ul>
+          <li>Returns a pointer to a directory stream (<code class="language-plaintext highlighter-rouge">DIR *</code>)</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">closedir - &lt;dirent.h&gt;</code>
+        <ul>
+          <li>Closes the directory stream and frees the pointer associated with it.</li>
+          <li><code class="language-plaintext highlighter-rouge">closedir( dir_stream )</code></li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">readdir - &lt;dirent.h&gt;</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">readdir( dir_stream )</code></li>
+          <li>Returns a pointer to the next entry in a directory stream, or <code class="language-plaintext highlighter-rouge">NULL</code> if all entries have already been returned.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">struct dirent - &lt;sys/types.h&gt;</code>
+        <ul>
+          <li>Directory struct that contains the information stored in a directory file. Some of the data members</li>
+          <li><code class="language-plaintext highlighter-rouge">d_name</code>: Name of a file</li>
+          <li><code class="language-plaintext highlighter-rouge">d_type</code>: File type as an int</li>
+          <li>Example usage:
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DIR * d;
+  d = opendir( "somedir" );
+  struct dirent *entry;
+  entry = readdir( d );
+  closedir(d);
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">rewinddir - &lt;dirent.h&gt;</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">rewinddir(d)</code>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">d</code> must be a <code class="language-plaintext highlighter-rouge">DIR *</code> returned from <code class="language-plaintext highlighter-rouge">opendir</code></li>
+              <li>Resets the directory stream of <code class="language-plaintext highlighter-rouge">d</code> to the beginning.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-17"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="input">Input</h3>
+<ul>
+  <li><strong>Command Line Arguments:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">int main( int argc, char *argv[] )</code>
+        <ul>
+          <li>Program name is considered the first command line argument</li>
+          <li><code class="language-plaintext highlighter-rouge">argc</code>
+            <ul>
+              <li>number of command line arguments</li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">argv</code>
+            <ul>
+              <li>array of command line arguments as strings</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>stdin input</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">fgets - &lt;stdio.h&gt; </code>
+        <ul>
+          <li>Read in data from a file stream and store it in a string.</li>
+          <li><code class="language-plaintext highlighter-rouge">fgets( char * s, int n, FILE * f );</code>
+            <ul>
+              <li>Reads at most <code class="language-plaintext highlighter-rouge">n-1</code> characters from <em>file stream</em> <code class="language-plaintext highlighter-rouge">f</code> and stores it in <code class="language-plaintext highlighter-rouge">s</code>, appends <code class="language-plaintext highlighter-rouge">NULL</code> to the end.</li>
+              <li>Stops at newline, end of file, or the byte limit.</li>
+              <li>File steam
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">FILE *</code> type, more complex than a file descriptor, allows for buffered input.</li>
+                  <li><code class="language-plaintext highlighter-rouge">stdin</code> is a <code class="language-plaintext highlighter-rouge">FILE *</code> variable</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">fgets(s, 100, stdin)</code></li>
+    </ul>
+  </li>
+  <li><strong>Pulling data from strings</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">sscanf - &lt;stdio.h&gt;</code>
+        <ul>
+          <li>Reads in data from a string using a format string to determine types.</li>
+          <li><code class="language-plaintext highlighter-rouge">sscanf( char *s, char * format, void * var0, void * var1, ... )</code>
+            <ul>
+              <li>Copies the data into each variable.</li>
+              <li>example
+                <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int x; float f; double d;
+sscanf(s, ”%d %f %lf", &amp;x, &amp;f, &amp;d);
+</code></pre></div>                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-18"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="signals">Signals</h3>
+<ul>
+  <li>
+    <p>All these functiosn can be found in <code class="language-plaintext highlighter-rouge">&lt;signal.h&gt;</code></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">kill(pid, signal)</code>
+    <ul>
+      <li>Returns 0 on success or -1 (<code class="language-plaintext highlighter-rouge">errno</code>) on failure.</li>
+      <li>Works like the command line <code class="language-plaintext highlighter-rouge">kill</code> program</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">sighandler</code>
+    <ul>
+      <li>To intercept signals in a c program you must create a signal handling function.</li>
+      <li>Some signals (like <code class="language-plaintext highlighter-rouge">SIGKILL</code>, <code class="language-plaintext highlighter-rouge">SIGSTOP</code>) cannot be caught.</li>
+      <li><code class="language-plaintext highlighter-rouge">static void sighandler( int signo )</code>
+        <ul>
+          <li>Must be <code class="language-plaintext highlighter-rouge">static</code>, must be v<code class="language-plaintext highlighter-rouge">oid</code>, must take a single <code class="language-plaintext highlighter-rouge">int</code> parameter.</li>
+          <li><code class="language-plaintext highlighter-rouge">static</code>
+            <ul>
+              <li>Static values in c exist outside the normal call stack, they can be accessed regardless of the function at the top.</li>
+              <li>For variables, this also means they retain their value even if the function they are declared in has ended.</li>
+              <li>Static values (variables and functions) can only be accessed from within the file they are declared.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">signal</code>
+    <ul>
+      <li>Attach a signal to a signal handling function</li>
+      <li><code class="language-plaintext highlighter-rouge">signal( SIGNUMBER, sighandler)</code></li>
+      <li>Note that you are passing the name of the signal handling function as a parameter.</li>
+    </ul>
+  </li>
+  <li>singal/sighandler example:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>static void sighandler(int signo) {
+if ( signo == SIGUSR1 )
+printf("Who you talkin to?\n”);
+}
+…
+signal(SIGUSR1, sighandler);
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h5 id="back-to-top-19"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="exec">Exec</h3>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;unistd.h&gt;</code></p>
+  </li>
+  <li>A group of c functions that can be used to run other programs.</li>
+  <li>Replaces the current process with the new program.</li>
+  <li><code class="language-plaintext highlighter-rouge">execl</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">execl(path, command, arg0, arg1 … NULL)</code></li>
+      <li><code class="language-plaintext highlighter-rouge">path</code>
+        <ul>
+          <li>The path to the program (ex: <code class="language-plaintext highlighter-rouge">"/bin/ls"</code> )</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">command</code>
+        <ul>
+          <li>The name of the program (ex: <code class="language-plaintext highlighter-rouge">"ls"</code>)</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">arg0</code> …
+        <ul>
+          <li>Each command line argument you wish to give the program. (ex <code class="language-plaintext highlighter-rouge">"-a", “-l"</code>)</li>
+          <li>The last argument must be <code class="language-plaintext highlighter-rouge">NULL</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">execlp</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">execlp(path, command, arg0, arg1 … NULL)</code></li>
+      <li>Works like <code class="language-plaintext highlighter-rouge">execl</code>, except it uses the <code class="language-plaintext highlighter-rouge">$PATH</code> environment variable for commands.</li>
+      <li>For example, you can use “<code class="language-plaintext highlighter-rouge">ls</code>” as the <code class="language-plaintext highlighter-rouge">path</code> instead of <code class="language-plaintext highlighter-rouge">“/bin/ls"</code></li>
+      <li>To check the <code class="language-plaintext highlighter-rouge">$PATH</code> environment variable, use: <code class="language-plaintext highlighter-rouge">$ echo $PATH</code></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">execvp</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">execvp(path, argument_array)</code></li>
+      <li><code class="language-plaintext highlighter-rouge">argument_array</code>
+        <ul>
+          <li>Array of strings containing the arguments to the command.</li>
+          <li><code class="language-plaintext highlighter-rouge">argument_array[0]</code> must be the name of the program.</li>
+          <li>The last entry must be <code class="language-plaintext highlighter-rouge">NULL</code></li>
+          <li>Like <code class="language-plaintext highlighter-rouge">execlp</code>, the path argument will use the <code class="language-plaintext highlighter-rouge">$PATH</code> environment variable.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>String Parsing for execvp</strong>
+    - <code class="language-plaintext highlighter-rouge">strsep - &lt;string.h&gt;</code>
+      - Parse a string with a common delimiter
+      - <code class="language-plaintext highlighter-rouge">strsep( source, delimiters )</code>
+      - Locates the first occurrence of any of the specified delimiters in a string and replaces it with <code class="language-plaintext highlighter-rouge">NULL</code>
+      - <code class="language-plaintext highlighter-rouge">delimiters</code> is a string, each character is interpreted as a distinct delimiter.
+      - Returns the beginning of the original string, sets source to the string starting at 1 index past the location of the new <code class="language-plaintext highlighter-rouge">NULL</code>
+      - Since <code class="language-plaintext highlighter-rouge">source</code>’s value is changed, it must be a pointer to a string <code class="language-plaintext highlighter-rouge">(char **)</code>.
+      - example
+        <code class="language-plaintext highlighter-rouge">
+        char line[100] = "woah-this-is-cool";
+        char *curr = line;
+        char * token;
+        token = strsep( &amp;curr, "-" );
+       </code>
+        - replaces the <code class="language-plaintext highlighter-rouge">-</code> after woah with <code class="language-plaintext highlighter-rouge">NULL</code>
+        - returns a pointer to the <code class="language-plaintext highlighter-rouge">w</code> in <code class="language-plaintext highlighter-rouge">“woah"</code>
+        - sets <code class="language-plaintext highlighter-rouge">curr</code> to point to the <code class="language-plaintext highlighter-rouge">t</code> in <code class="language-plaintext highlighter-rouge">"this-is-cool"</code></p>
+
+<h5 id="back-to-top-20"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="managing-sub-processes">Managing Sub-Processes</h3>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">fork() - &lt;unistd.h&gt;</code></p>
+
+    <ul>
+      <li>Creates a separate process based on the current one, the new process is called a child, the original is the parent.</li>
+      <li>The child process is a duplicate of the parent process.</li>
+      <li>All parts of the parent process are copied, including stack and heap memory, and the file table.</li>
+      <li>Returns 0 to the child and the child’s pid, or -1 (<code class="language-plaintext highlighter-rouge">errno</code>), to the parent.</li>
+      <li>If a parent process ends before the child, the child’s new parent pid is 1</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">wait - &lt;sys/wait.h&gt;</code>
+    <ul>
+      <li>Stops a parent process from running until any child has exited.</li>
+      <li>Returns the pid of the child that exited, or -1 (<code class="language-plaintext highlighter-rouge">errno</code>), and gathers information about the child process (this is called reaping)</li>
+      <li>If multiple child processes exit, an arbitrary one will be reaped.</li>
+      <li><code class="language-plaintext highlighter-rouge">wait(status)</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">status</code> is used to store information about how the process exited.</li>
+          <li>Status macros
+            <ul>
+              <li>Usage: <code class="language-plaintext highlighter-rouge">MACRO( status )</code></li>
+              <li><code class="language-plaintext highlighter-rouge">WIFEEXITED</code>: True if child exited normally</li>
+              <li><code class="language-plaintext highlighter-rouge">WEXITSTATUS</code>: The return value of the child</li>
+              <li><code class="language-plaintext highlighter-rouge">WIFSIGNALED</code>: True if child exited due to a signal</li>
+              <li><code class="language-plaintext highlighter-rouge">WTERMSIG</code>: The signal number intercepted by the child</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">waitpid - &lt;sys/wait.h&gt;</code>
+    <ul>
+      <li>Wait for a specific child</li>
+      <li><code class="language-plaintext highlighter-rouge">waitpid(pid, status, options)</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">pid</code>
+            <ul>
+              <li>The pid of the specific child to look for</li>
+              <li>If -1, will wait for any child (normal wait)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">options</code>
+        <ul>
+          <li>Can set other behavior for waitpid, if 0, will work normally.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-21"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="redirection">Redirection</h3>
+<ul>
+  <li>
+    <p>Changing the usual input/output behavior of a program</p>
+  </li>
+  <li><strong>Command line redirection</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">&gt;</code>
+        <ul>
+          <li>Redirects stdout to a file.</li>
+          <li>Overwrites the contents of the file.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">&gt;&gt;</code>
+        <ul>
+          <li>Redirects stdout to a file by appending.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;</code>
+        <ul>
+          <li>Redirect stdin from a file.</li>
+          <li>The file is treated exactly like stdin, for example scanf() will read up until a newline is found.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">|</code> (pipe)
+        <ul>
+          <li>Redirect stdout from one program to stdin of the next.</li>
+          <li>Very useful for chaining programs together.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Redirection in c programs</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">dup2 - &lt;unistd.h&gt;</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">dup2( fd1, fd2 )</code></li>
+          <li>Redirects <code class="language-plaintext highlighter-rouge">fd2</code> to <code class="language-plaintext highlighter-rouge">fd1</code></li>
+          <li>Any use of <code class="language-plaintext highlighter-rouge">fd2</code> will now act on the file for <code class="language-plaintext highlighter-rouge">fd1</code>.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">dup - &lt;unistd.h&gt;</code>
+        <ul>
+          <li>Duplicates an existing entry in the file table.</li>
+          <li>Returns a new file descriptor for the duplicate entry.</li>
+          <li><code class="language-plaintext highlighter-rouge">dup( fd )</code></li>
+        </ul>
+      </li>
+      <li>
+        <p>USING <code class="language-plaintext highlighter-rouge">dup</code> and <code class="language-plaintext highlighter-rouge">dup2</code> together:</p>
+
+        <pre><code class="language-C">fd1 = open(“foo”, O_WRONLY);
+backup_sdout = dup( STDOUT_FILENO ) // save stdout for later
+dup2(fd1, STDOUT_FILENO) //sets STDOUT_FILENO's entry to the file for fd1.
+dup2(backup_stdout, STDOUT_FILENO) //sets STDOUT_FILENO’s entry to backup_stdout, which is stdout
+</code></pre>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-22"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="system-v-ipc">System V IPC</h3>
+<ul>
+  <li>There are many kinds of Inter-Process Communication, <em>but</em> there is a specific set of IPC features that have competing standardized implementations, these are:
+    <ul>
+      <li>Shared Memory</li>
+      <li>Semaphores</li>
+      <li>Message Queues</li>
+    </ul>
+  </li>
+  <li>For these features, there are 2 standards:
+    <ul>
+      <li>Portable Operating System Interface (POSIX)</li>
+      <li>System V</li>
+      <li>Both of these cover more than IPC, and their functionality, thought not their implementations, are mostly the same. We will be using System V IPC.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">$ ipcs</code> is a useful command line utility to see active System V IPC structures.</li>
+</ul>
+
+<h3 id="shared-memory">Shared Memory</h3>
+<ul>
+  <li>A segment of heap-like memory that can be accessed by multiple processes.</li>
+  <li>Shared memory is accessed via a key that is known by any process that needs to access it.</li>
+  <li>Shared memory does not get released when a program exits.</li>
+  <li><strong>5 Shared memory operations</strong>
+    <ul>
+      <li>Create the segment (happens once) - <code class="language-plaintext highlighter-rouge">shmget</code></li>
+      <li>Access the segment (happens once per process) - <code class="language-plaintext highlighter-rouge">shmget</code></li>
+      <li>Attach the segment to a variable (once per process) - <code class="language-plaintext highlighter-rouge">shmat</code></li>
+      <li>Detach the segment from a variable (once per process) - <code class="language-plaintext highlighter-rouge">shmdt</code></li>
+      <li>Remove the segment (happens once) - <code class="language-plaintext highlighter-rouge">shmctl</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Using shared memory in C:
+Headers: <code class="language-plaintext highlighter-rouge">&lt;sys/shm.h&gt; &lt;sys/ipc.h&gt; &lt;sys/types.h&gt;</code></p>
+
+    <pre><code class="language-C">int *data;
+int shmd;
+shmd = shmget(KEY, sizeof(int), IPC_CREAT | 0640); //create and access
+printf("shmd: %d\n", shmd);
+data = shmat(shmd, 0, 0); //attach
+printf("data: %p\n", data);
+printf("*data: %d\n", *data);
+*data = * data + 10; //work with the segment as a normal pointer
+printf("*data: %d\n", *data);
+shmdt(data); //detach
+shmctl(shmid, IPC_REMOVE, 0); //remove the segment
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="semaphores">Semaphores</h3>
+<ul>
+  <li>IPC construct used to control access to a shared resource (like a file or shared memory).</li>
+  <li>Most commonly, a semaphore is used as a counter representing how many processes can access a resource at a given time.
+    <ul>
+      <li>If a semaphore has a value of 3, then it can have 3 active “users”.</li>
+      <li>If a semaphore has a value of 0, then it is unavailable.</li>
+    </ul>
+  </li>
+  <li>Some semaphore operations are <em>atomic</em>, meaning they will not be split up into multiple processor instructions.</li>
+  <li><strong>Semaphore operations</strong>
+    <ul>
+      <li>“Maintenance operations”
+        <ul>
+          <li>Create a semaphore</li>
+          <li>Set an initial value</li>
+          <li>Remove a semaphore</li>
+        </ul>
+      </li>
+      <li>Traditional Semaphore Usage
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">Up(S)</code> | <code class="language-plaintext highlighter-rouge">V(S)</code> - <em>atomic</em>
+            <ul>
+              <li>Release the semaphore to signal you are done with its associated resource</li>
+              <li>Pseudocode
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">S++</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">Down(S)</code> | <code class="language-plaintext highlighter-rouge">P(S)</code> - <em>atomic</em>
+            <ul>
+              <li>Attempt to take the semaphore.</li>
+              <li>If the semaphore is 0, wait for it to be available.</li>
+              <li>Pseudocode
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">while (S == 0) { block } S--;</code></li>
+                </ul>
+              </li>
+              <li>Important distinction that the blocking is not atmoic, so if a processess checks the semaphore and it is unavailable, other processes can run, <em>but</em> if the semaphore is available, the process will immediately modify the semaphore.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Using semaphores in C
+    <ul>
+      <li>headers: <code class="language-plaintext highlighter-rouge">&lt;sys/types.h&gt; &lt;sys/ipc.h&gt; &lt;sys/sem.h&gt;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">semget</code>
+        <ul>
+          <li>Create/Get access to a semaphore.</li>
+          <li>Returns a semaphore descriptor or -1 (<code class="language-plaintext highlighter-rouge">errno</code>)</li>
+          <li><code class="language-plaintext highlighter-rouge">semget( key, amount, flags )</code>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">key</code>
+                <ul>
+                  <li>Unique semaphore identifier</li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">amount</code>
+                <ul>
+                  <li>Semaphores are stored as sets of one or more. The number of semaphores to create/get in the set.</li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">flags</code>
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">IPC_CREAT</code>: create the semaphore and set value to <code class="language-plaintext highlighter-rouge">0</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">IPC_EXCL</code>: Fail if the semaphore already exists and <code class="language-plaintext highlighter-rouge">IPC_CREAT</code> is on.</li>
+                  <li>Includes permissions for the semaphore, combine with bitwise or (<code class="language-plaintext highlighter-rouge">|</code>).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">semctl</code>
+        <ul>
+          <li>Control the semaphore, including
+            <ul>
+              <li>Set the semaphore value</li>
+              <li>Remove the semaphore</li>
+              <li>Get the current value</li>
+              <li>Get/set semaphore metadata</li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">semctl(descriptor, index, operation, data)</code>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">descriptor</code>
+                <ul>
+                  <li>The return value of <code class="language-plaintext highlighter-rouge">semget</code></li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">index</code>
+                <ul>
+                  <li>The index of the semaphore you want to control in the semaphore set.</li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">operation</code>
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">IPC_RMID</code>: remove the semaphore</li>
+                  <li><code class="language-plaintext highlighter-rouge">SETVAL</code>: Set the value (requires data)</li>
+                  <li><code class="language-plaintext highlighter-rouge">GETVAL</code>: Return the value</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">data</code>
+            <ul>
+              <li>Variable for setting/storing semaphore metadata</li>
+              <li>Type is <code class="language-plaintext highlighter-rouge">union semun</code></li>
+              <li><strong>You have to declare this union in your main c file on linux machines.</strong>
+                <ul>
+                  <li>
+                    <pre><code class="language-C">union semun {
+  int val;                  //used for SETVAL
+  struct semid_ds *buf;     //used for IPC_STAT and IPC_SET
+  unsigned short  *array;   //used for SETALL
+  struct seminfo  *__buf;
+};
+</code></pre>
+                  </li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">union</code>?
+                <ul>
+                  <li>A c structure designed to hold only one value at a time from a group of potential values.</li>
+                  <li>Just large enough to hold the largest piece of data it could potentially contain</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">semop</code>
+        <ul>
+          <li>Perform an atomic semaphore operation</li>
+          <li>You can <code class="language-plaintext highlighter-rouge">Up/Down</code> a semaphore by any integer value, not just <code class="language-plaintext highlighter-rouge">1</code></li>
+          <li><code class="language-plaintext highlighter-rouge">semop( descriptor, operation, amount )</code>
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">amount</code>
+                <ul>
+                  <li>The amount of operations you want to perform on the semaphore set.</li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">operation</code>
+                <ul>
+                  <li>A pointer to a <code class="language-plaintext highlighter-rouge">struct sembuf</code>
+                    <ul>
+                      <li>
+                        <pre><code class="language-C">struct sembuf {
+  short sem_op;
+  short sem_num;
+  short sem_flag;
+};
+</code></pre>
+                      </li>
+                      <li><code class="language-plaintext highlighter-rouge">sem_num</code>
+                        <ul>
+                          <li>The index of the semaphore you want to work on.</li>
+                        </ul>
+                      </li>
+                      <li><code class="language-plaintext highlighter-rouge">sem_op</code>
+                        <ul>
+                          <li><code class="language-plaintext highlighter-rouge">Down(S)</code>: Any negative number</li>
+                          <li><code class="language-plaintext highlighter-rouge">Up(S)</code>: Any positive number</li>
+                          <li><code class="language-plaintext highlighter-rouge">0</code>: Block until the semaphore reaches <code class="language-plaintext highlighter-rouge">0</code></li>
+                        </ul>
+                      </li>
+                      <li><code class="language-plaintext highlighter-rouge">sem_flag</code>
+                        <ul>
+                          <li><code class="language-plaintext highlighter-rouge">SEM_UNDO</code>: Allow the OS to undo the given operation. Useful in the event that a program exits before it could release a semaphore.</li>
+                          <li><code class="language-plaintext highlighter-rouge">IPC_NOWAIT</code>: Instead of waiting for the semaphore to be available, return an err</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Putting it all together.
+        <ul>
+          <li>Creating a single semaphore and initializing its value to <code class="language-plaintext highlighter-rouge">1</code>:
+            <pre><code class="language-C">int semd = semget(KEY, 1, IPC_CREAT | IPC_EXCL | 0644);
+union semun us;
+us.val = 1;
+r = semctl(semd, 0, SETVAL, us);
+</code></pre>
+          </li>
+          <li>Removing a semaphore:
+<code class="language-plaintext highlighter-rouge">semctl(semd, IPC_RMID, 0);</code></li>
+          <li>Getting a a semaphore &amp; upping and downing it.
+            <pre><code class="language-C">semd = semget(KEY, 1, 0); //get access
+struct sembuf sb;
+sb.sem_num = 0;
+sb.sem_flg = SEM_UNDO;
+sb.sem_op = -1; //setting the operation to down
+
+semop(semd, &amp;sb, 1); //perform the operation
+printf("got the semaphore!\n");
+sleep(10); //simulate doing something.
+
+sb.sem_op = 1; //set the operation to up
+semop(semd, &amp;sb, 1); //perform the operation
+</code></pre>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-23"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="pipes">Pipes</h3>
+
+<ul>
+  <li>
+    <p>A pipe is a conduit in memory between 2 separate processes on the same computer.</p>
+  </li>
+  <li>Pipes have 2 ends, a read end and a write end.
+Pipes act just like files (i.e. you can use <code class="language-plaintext highlighter-rouge">read()</code> and <code class="language-plaintext highlighter-rouge">write()</code> to send any kind of data).</li>
+  <li>
+    <p>Unnamed pipes have no external identifier (more on named pipes later).</p>
+  </li>
+  <li>Working with unnamed pipes: <code class="language-plaintext highlighter-rouge">pipe - &lt;unistd.h&gt;</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">pipe( descriptors )</code></li>
+      <li>Create an unnamed pipe.</li>
+      <li>Open the unnamed pipe in the calling program twice, once for reading, and once for writing.</li>
+      <li>Returns 0 if the pipe was created, -1 if not.</li>
+      <li><code class="language-plaintext highlighter-rouge">descriptors</code>
+        <ul>
+          <li>Array that will contain the descriptors for each end of the pipe. Must be an <code class="language-plaintext highlighter-rouge">int</code> array of size 2.</li>
+          <li><code class="language-plaintext highlighter-rouge">descriptors[0]</code> is the read end.</li>
+          <li><code class="language-plaintext highlighter-rouge">descriptors[1]</code> is the write end.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Example:</p>
+
+        <pre><code class="language-C">//it is usefull to add these definitions to make your code more readible
+#define READ 0
+#define WRITE 1
+
+int main() {
+  int fds[2];
+  pipe( fds );
+  char line[100];
+
+  f = fork();
+  if (f == 0) {
+    close( fds[READ] ); //it is a good idea to close the end of the pipe your are not using.
+    write( fds[WRITE], "hello!", 7);
+  }
+  else {
+    close( fds[WRITE] );
+    read( fds[READ], line, sizeof(line) );
+  }
+}
+</code></pre>
+        <h3 id="named-pipes">Named Pipes</h3>
+      </li>
+    </ul>
+  </li>
+  <li>Also known as FIFOs.</li>
+  <li>Same as unnamed pipes except FIFOs have a name that can be used to identify them via different programs.</li>
+  <li>Like unnamed pipes, FIFOS are unidirectional.</li>
+  <li><code class="language-plaintext highlighter-rouge">mkfifo</code>
+    <ul>
+      <li>Shell command to make a FIFO</li>
+      <li><code class="language-plaintext highlighter-rouge">$ mkfifo name</code></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">mkfifo - &lt;sys/types.h&gt; &lt;sys/stat.h&gt;</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">mkfifo( name, permissions )</code></li>
+      <li>c function to create a FIFO</li>
+      <li>Returns 0 on success and -1 on failure</li>
+      <li>Once created, the FIFO acts like a regular file, and we can use <code class="language-plaintext highlighter-rouge">open</code>, <code class="language-plaintext highlighter-rouge">read</code>, <code class="language-plaintext highlighter-rouge">write</code>, and <code class="language-plaintext highlighter-rouge">close</code> on it.</li>
+      <li>FIFOs will <strong>block on open</strong> until both ends of the pipe have a connection.</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-24"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="pipe-networking">Pipe Networking</h3>
+<ul>
+  <li>For the purposes of these notes, the words <em>server</em> and <em>client</em> will be used only to differentiate two programs with respect to their roles in a connection attempt, and not with respect to their usage once a connection is made.
+    <ul>
+      <li><em>Server</em> will be the program that starts up and awaits an incoming connection.</li>
+      <li><em>Client</em> will be the program that initiates a connection to a waiting server.</li>
+    </ul>
+  </li>
+  <li><strong>Handshake</strong>
+    <ul>
+      <li>A procedure to ensure that a connection has been established between 2 programs.</li>
+      <li>Both ends of the connection must verify that they can <em>send</em> and <em>receive</em> data to and from each other.</li>
+      <li>3 way handshake
+        <ul>
+          <li>Client sends a message to the server (in TCP networking, this is called SYN). At this point, the server knows it can receive data.</li>
+          <li>Server sends a response to the client based on the client’s initial message (SYN_ACK). At this point the client knows it can recieve and send data.</li>
+          <li>Client sends a response back to the server based on the server’s response (ACK). At this point, the server knows it can receive and send data.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>3 Way Handshake Implementation:
+    <ul>
+      <li><strong>Setup</strong></li>
+      <li>Server creates a FIFO (Well Known Pipe) and waits for a connection.</li>
+      <li>Client creates a “private” FIFO.
+        <ul>
+          <li>To use pid: <code class="language-plaintext highlighter-rouge">sprintf(buffer, "%d", getpid() );</code></li>
+        </ul>
+      </li>
+      <li><strong>Handshake</strong>
+        <ul>
+          <li>Client connects to server and sends the private FIFO name. Client waits for a response from the server.</li>
+          <li>Server receives client’s message and removes the WKP.</li>
+          <li>Server connects to client FIFO, sending an initial acknowledgement message.</li>
+          <li>Client receives server’s message, removes its private FIFO.</li>
+          <li>Client sends response to server.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Operation</strong>
+    <ul>
+      <li>Server and client send information back and forth.</li>
+    </ul>
+  </li>
+  <li><strong>Reset</strong>
+    <ul>
+      <li>Client exits, server closes any connections to the client.</li>
+      <li>Server recreates the WKP waits for another client.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="server-client-designs">Server-Client Designs</h3>
+
+<ul>
+  <li>There are a number of different ways to implement server/client systems.</li>
+  <li><strong>Single Use Server</strong>
+    <ul>
+      <li>In this system, the server exits along with the client.
+        <ol>
+          <li>Handshake</li>
+          <li>Client: sends data to server.</li>
+          <li>Server: gets response, processes data, resonds.</li>
+          <li>Client: deals with response.</li>
+        </ol>
+      </li>
+      <li>When the client exits, so does the server.</li>
+    </ul>
+  </li>
+  <li><strong>Persistent Single Client Server</strong>
+    <ul>
+      <li>In this system, the server will communicate with a single client. When the client exits, the server will reset to handle a new client.
+        <ol>
+          <li>Handshake</li>
+          <li>Client: sends data to server.</li>
+          <li>Server: gets response, processes data, resonds.</li>
+          <li>Client: deals with response.</li>
+        </ol>
+      </li>
+      <li>When the client exits, the server goes back to setp 1, awaiting a new client.</li>
+      <li>The only way to quit the server is via ctl-c. This is fine, but it will leave the WKP on the filesystem. A cleaner exit would involve creating a signal handler that catches <code class="language-plaintext highlighter-rouge">SIGINT</code> and remove the WKP before exiting.</li>
+    </ul>
+  </li>
+  <li><strong>Forking Server</strong>
+    <ul>
+      <li>In this system, the server will create subservers for client communication. This will allow for multiple simultanious connections.</li>
+      <li>The main server’s job is to wait for a connection and create subservers.</li>
+      <li>The subserver will handle all communication with the client.</li>
+      <li>The client can work exactly the same as the persistent server client.
+        <ol>
+          <li>Server: creates WKP and blocks until connection.</li>
+          <li>Client: creates PP, connects to WKP, sends PP name, blocks on connection to PP.</li>
+          <li>Server: gets connection on WKP, creates subserver.</li>
+          <li>Server: Closes &amp; removes WKP.</li>
+          <li>Server: Resets back to step 1.</li>
+          <li>Subserver: reads PP name from client.</li>
+          <li>Subserver: sends secret message to client.</li>
+          <li>Client: gets subserver secret, removes PP, responds, accordingly.
+9: Subserver: verfies response from client, completing 3-way handshake.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="back-to-top-25"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="sockets">Sockets</h3>
+
+<ul>
+  <li>A connection between 2 programs using network protocols.
+    <ul>
+      <li>This is usually between 2 computers, but does not have to be.</li>
+    </ul>
+  </li>
+  <li>A socket corresponds to an IP (internet protocol) Address / Port pair.</li>
+  <li>To use a socket:
+    <ol>
+      <li>create the socket: <code class="language-plaintext highlighter-rouge">socket</code></li>
+      <li>bind it to an address and port: <code class="language-plaintext highlighter-rouge">bind</code></li>
+      <li>listen &amp; accept/initiate a connection: <code class="language-plaintext highlighter-rouge">listen</code> <code class="language-plaintext highlighter-rouge">accept</code>, <code class="language-plaintext highlighter-rouge">connect</code></li>
+      <li>send/receive data
+        <ul>
+          <li>Functions vary depeding on type of socket</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="socket-protocols">Socket Protocols</h3>
+
+<ul>
+  <li><strong>Stream Sockets (TCP)</strong>
+    <ul>
+      <li>Reliable 2 way communication.</li>
+      <li>Must be connected on both ends.
+        <ul>
+          <li>3 way handshake</li>
+        </ul>
+      </li>
+      <li>Data is received in the order it is sent.</li>
+    </ul>
+  </li>
+  <li><strong>Datagram Sockets (UDP)</strong>
+    <ul>
+      <li>“Connectionless”: an established connection is not required.</li>
+      <li>Data sent may be received out of order (or not at all).</li>
+      <li>Cannot use the usual <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">write</code> function calls.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sockets-in-c">Sockets in C</h3>
+
+<ul>
+  <li>
+    <p>Most functions and strcutres in <code class="language-plaintext highlighter-rouge">sys/socket.h</code></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">socket( domain, type, protocol )</code>
+    <ul>
+      <li>Creates a socket, opens it like a file, returning a socket descriptor (int that works like a file descriptor)</li>
+      <li><code class="language-plaintext highlighter-rouge">domain</code>: type of address
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">AF_INET</code> or <code class="language-plaintext highlighter-rouge">AF_INET6</code> or <code class="language-plaintext highlighter-rouge">AF_UNSPEC</code></li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">type</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">SOCK_STREAM</code> or <code class="language-plaintext highlighter-rouge">SOCK_DGRAM</code></li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">protocol</code>
+        <ul>
+          <li>Combination of domain and type settings</li>
+          <li>If set to 0 the OS will set to correct protocol (TCP or UDP)</li>
+        </ul>
+      </li>
+      <li>example: <code class="language-plaintext highlighter-rouge">int sd = socket(AF_INET, SOCK_STREAM, 0);</code></li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">getaddrinfo</code> <code class="language-plaintext highlighter-rouge">&lt;sys/types.h&gt; &lt;sys/socket.h&gt; &lt;netdb.h&gt;</code></p>
+
+    <ul>
+      <li>
+        <p>System library calls use a <code class="language-plaintext highlighter-rouge">struct addrinfo</code> to represent network addresses (containing information like IP address, port, protocol…)</p>
+      </li>
+      <li>
+        <p>Will lookup information about the desired network address and get one or more matching <code class="language-plaintext highlighter-rouge">struct addrinfo</code> entries as a linked list.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">getaddrinfo(node, service, hints, results)</code></p>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">node</code>: String containing an IP address or hostname to lookup
+        <ul>
+          <li>If <code class="language-plaintext highlighter-rouge">NULL</code>, use the local machine’s IP addresses (all of them).</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">service</code>: String with a port number or service name (if the service is in <code class="language-plaintext highlighter-rouge">/etc/services</code>)</li>
+      <li><code class="language-plaintext highlighter-rouge">hints</code>: Pointer to a <code class="language-plaintext highlighter-rouge">struct addrinfo</code> used to provide settings for the lookup.
+        <ul>
+          <li>Think of this as a filter for the lookup that <code class="language-plaintext highlighter-rouge">getaddrinfo</code> performs. For example, if you only want to get an IPv4 address, you can set <code class="language-plaintext highlighter-rouge">hints</code> to be an IPv4 address.</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">results</code>: Pointer to a linked list of <code class="language-plaintext highlighter-rouge">struct addrinfo</code> containing entries for each matching address.</li>
+      <li><code class="language-plaintext highlighter-rouge">getaddrinfo</code> will allocate memory for these structs. Since <code class="language-plaintext highlighter-rouge">results</code> will be a linked list of unknown size, you should use <code class="language-plaintext highlighter-rouge">freeaddrinfo</code> to release the entire linked list when you are done.</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">bind( socket descriptor, address, address_length)</code> (server only)</p>
+
+    <ul>
+      <li>
+        <p>Binds the socket to an address and port. This allows a server has to have a set public* adrress and port.</p>
+      </li>
+      <li>
+        <p>Returns 0 (success) or -1 (failure)</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">socket descriptor</code>: return value of socket</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">address</code>: pointer to a <code class="language-plaintext highlighter-rouge">struct sockaddr</code> representing the address.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">address_length</code>: Size of the address, in bytes</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">address</code> and <code class="language-plaintext highlighter-rouge">address_length</code> can be retrieved from <code class="language-plaintext highlighter-rouge">getaddrinfo</code>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="using-getaddrinfo-socket--bind-on-a-server">Using getaddrinfo, socket &amp; bind on a server</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//use getaddrinfo
+struct addrinfo * hints, * results;
+hints = calloc(1,sizeof(struct addrinfo));
+hints-&gt;ai_family = AF_INET;
+hints-&gt;ai_socktype = SOCK_STREAM; //TCP socket
+hints-&gt;ai_flags = AI_PASSIVE; //only needed on server
+getaddrinfo(NULL, 9845, hints, &amp;results);  //Server sets node to NULL
+
+//create socket
+int sd = socket(results-&gt;ai_family, results-&gt;ai_socktype, results-&gt;ai_protocol);
+
+bind(sd, results-&gt;ai_addr, results-&gt;ai_addrlen);
+
+//DO STUFF
+
+free(hints)
+freeaddrinfo(results);
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">listen (socket_descriptor, backlog)</code> (server only)
+    <ul>
+      <li>Set a socket to passively await a connection.</li>
+      <li>Needed for stream sockets.</li>
+      <li>Does not block.</li>
+      <li><code class="language-plaintext highlighter-rouge">socket descriptor</code>: return value of <code class="language-plaintext highlighter-rouge">socket</code></li>
+      <li><code class="language-plaintext highlighter-rouge">backlog</code>: Number of connections that can be queued up.
+        <ul>
+          <li>Depending on the protocol, this may not do much.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">accept</code> (server only)
+    <ul>
+      <li>Accept the next client in the queue of a socket in the listen state.</li>
+      <li>Used for stream sockets.</li>
+      <li>Performs the server side of the 3 way handshake</li>
+      <li>Creates a new socket for communicating with the client, the listening socket is not modified.</li>
+      <li>Returns a descriptor to the new socket</li>
+      <li>Blocks until a connection attempt is made</li>
+      <li><code class="language-plaintext highlighter-rouge">accept(socket_descriptor, address, address_length)</code></li>
+      <li><code class="language-plaintext highlighter-rouge">socket descriptor</code>: descriptor for the listening socket
+<code class="language-plaintext highlighter-rouge">address</code>: Pointer to a <code class="language-plaintext highlighter-rouge">struct sockaddr_storage</code> that will contain information about the new socket after accept succeeds.</li>
+      <li><code class="language-plaintext highlighter-rouge">address length</code>: Pointer to a variable that will contain the size of the new socket address after accept succeeds.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="using-listen-and-accept-for-servers">Using listen and accept for servers</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//use getaddrinfo (not shown)
+//create socket
+int sd = socket(results-&gt;ai_family, results-&gt;ai_socktype, results-&gt;ai_protocol);
+//use bind
+bind(sd, results-&gt;ai_addr, results-&gt;ai_addrlen);
+listen(sd, 10);
+int client_socket;
+socklen_t sock_size;
+struct sockaddr_storage client_address;
+sock_size = sizeof(client_address);
+client_socket = accept(sd,(struct sockaddr *)&amp;client_address, &amp;sock_size);
+</code></pre></div></div>
+
+<h3 id="using-connect-for-clients">Using connect for clients</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">connect</code> (client only) <code class="language-plaintext highlighter-rouge">&lt;sys/socket.h&gt; &lt;sys/types.h&gt;</code>
+    <ul>
+      <li>Connect to a socket currently in the listening state.</li>
+      <li>Used for stream sockets.</li>
+      <li>Performs the client side of the 3 way handshake</li>
+      <li>Binds the socket to an address and port</li>
+      <li>Blocks until a connection is made (or fails)</li>
+      <li><code class="language-plaintext highlighter-rouge">connect(socket descriptor, address, address length)</code></li>
+      <li><code class="language-plaintext highlighter-rouge">socket descriptor</code>: descriptor for the socket</li>
+      <li><code class="language-plaintext highlighter-rouge">address</code>: Pointer to a <code class="language-plaintext highlighter-rouge">struct sockaddr</code> representing the address.</li>
+      <li><code class="language-plaintext highlighter-rouge">address length</code>: Size of the address, in bytes</li>
+      <li><code class="language-plaintext highlighter-rouge">address</code> and <code class="language-plaintext highlighter-rouge">address length</code> can be retrieved from <code class="language-plaintext highlighter-rouge">getaddrinfo()</code></li>
+      <li>Note that the arguments mirror those of <code class="language-plaintext highlighter-rouge">bind()</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//use getaddrinfo (not shown)
+//create socket
+int sd = socket(results-&gt;ai_family, results-&gt;ai_socktype, results-&gt;ai_protocol);
+
+connect(sd, results-&gt;ai_addr, results-&gt;ai_addrlen);
+</code></pre></div></div>
+
+<h5 id="back-to-top-26"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+<h3 id="select">Select</h3>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">select</code> is a function that monitors multiple file descriptors, allowing a program to read from different sources.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">select</code> can also be used for writing to files, but we will not focus on that usage.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">select</code> will <strong>block</strong> on all the provided vile descriptors, and return when any of them have data to be read.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">select</code> returns the number of file descriptors that have data to read, and then modifies a parameter to set which descriptors are available. If an error occured, return <code class="language-plaintext highlighter-rouge">-1</code>.</p>
+  </li>
+  <li>
+    <p>To use select, you create a set of potential file descriptors using the type <code class="language-plaintext highlighter-rouge">fd_set</code>. Most of what we want from <code class="language-plaintext highlighter-rouge">select</code> involves interacting with an <code class="language-plaintext highlighter-rouge">fd_set</code> variable by using various macros.</p>
+  </li>
+  <li>To use <code class="language-plaintext highlighter-rouge">select</code> we must:
+    <ul>
+      <li>Create an <code class="language-plaintext highlighter-rouge">fd_set</code> variable.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">fd_set desciptors;</code></li>
+        </ul>
+      </li>
+      <li>Clear the <code class="language-plaintext highlighter-rouge">fd_set</code> (<code class="language-plaintext highlighter-rouge">FD_ZERO</code>)
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">FD_ZERO( &amp;desciptors );</code></li>
+        </ul>
+      </li>
+      <li>Add file descriptors to the <code class="language-plaintext highlighter-rouge">fd_set</code> (<code class="language-plaintext highlighter-rouge">FD_SET</code>).
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">FD_SET(listen_socket, &amp;descriptors);</code></li>
+        </ul>
+      </li>
+      <li>Call <code class="language-plaintext highlighter-rouge">select</code> and wait until any of the provided descriptors are available.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">select(max_descriptor+1, &amp;desciptors, NULL, NULL, NULL);</code></li>
+          <li>The first argument is <code class="language-plaintext highlighter-rouge">1</code> more than the largest file desciptor in <code class="language-plaintext highlighter-rouge">desciptors</code>. This is an artifact of how <code class="language-plaintext highlighter-rouge">select</code> works.</li>
+          <li>The second argument is the <code class="language-plaintext highlighter-rouge">fd_set</code> of descriptors waiting to be read from.</li>
+          <li>The third and fourth arguments are for descriptors for other actions, like writing.</li>
+          <li>The final argument allows you to set a timeout, if <code class="language-plaintext highlighter-rouge">NULL</code>, <code class="language-plaintext highlighter-rouge">select</code> will block indefinitely.</li>
+          <li>Returns the number of file descriptors that are ready (this is usually 1).</li>
+          <li>Modifies <code class="language-plaintext highlighter-rouge">desciptors</code> to contain the desciptors that are available.</li>
+        </ul>
+      </li>
+      <li>Once <code class="language-plaintext highlighter-rouge">select</code> returns, loop through the potential file desciptors and determine which one is available (<code class="language-plaintext highlighter-rouge">FD_ISSET</code>).
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">FD_ISSET(listen_socket, &amp;desciptors);</code></li>
+        </ul>
+      </li>
+      <li>If you are going to use <code class="language-plaintext highlighter-rouge">select</code> multiple times, you’ll have to repeatedly zero out the <code class="language-plaintext highlighter-rouge">fd_set</code> and add the descriptors to it, since <code class="language-plaintext highlighter-rouge">select</code> modifies it.</li>
+      <li>It is usually a good idea to have a backup <code class="language-plaintext highlighter-rouge">fd_set</code> to keep all your descriptors in.</li>
+    </ul>
+  </li>
+  <li>Putting it all together for a program that reads from a socket or <code class="language-plaintext highlighter-rouge">stdin</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fd_set read_fds;
+int listen_socket, client_socket;
+char buffer[100];
+
+FD_ZERO(&amp;read_fds);
+//assume this functuion correcly sets up a listening socket
+listen_socket = server_setup();
+
+//add listen_socket and stdin to the set
+FD_SET(listen_socket, &amp;read_fds);
+//add stdin's file desciptor
+FD_SET(STDIN_FILENO, &amp;read_fds);
+
+int i = select(listen_socket+1, &amp;read_fds, NULL, NULL, NULL);
+
+//if standard in, use fgets
+if (FD_ISSET(STDIN_FILENO, &amp;read_fds)) {
+  fgets(buffer, sizeof(buffer), stdin);
+}
+//if socket, accept the connection
+//assume this function works correctly
+if (FD_ISSET(listen_socket, &amp;read_fds)) {
+  client_socket = server_connect(listen_socket);
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h5 id="back-to-top-27"><a href="../notes/index.html#">Back to top</a></h5>
+<hr>
+
+  </div>
+
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="/systems-dw/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body></html>

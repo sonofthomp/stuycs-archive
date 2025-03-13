@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project 00: myTunes | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project 00: myTunes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Due: Monday 10/25 8:00 am GitHub Submission Link: git@github.com:mks65/my_tunez.git" />
+<meta property="og:description" content="Due: Monday 10/25 8:00 am GitHub Submission Link: git@github.com:mks65/my_tunez.git" />
+<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/systems/2021/10/19/p00.html" />
+<meta property="og:url" content="systems/2021/10/19/p00.html" />
+<meta property="og:site_name" content="Systems Level Programming" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-19T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project 00: myTunes" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"systems/2021/10/19/p00.html"},"description":"Due: Monday 10/25 8:00 am GitHub Submission Link: git@github.com:mks65/my_tunez.git","url":"systems/2021/10/19/p00.html","@type":"BlogPosting","headline":"Project 00: myTunes","dateModified":"2021-10-19T00:00:00+00:00","datePublished":"2021-10-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+
+
+</head>
+<body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../../../">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../notes">Notes</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              
+            </li>
+            
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Project 00: myTunes</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-10-19T00:00:00+00:00" itemprop="datePublished">Oct 19, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="due-monday-1025-800-am">Due: Monday 10/25 8:00 am</h4>
+<h4 id="github-submission-link-gitgithubcommks65my_tunezgit">GitHub Submission Link: git@github.com:mks65/my_tunez.git</h4>
+
+<!--more-->
+
+<h3 id="music-library-overview">Music Library Overview</h3>
+<ul>
+  <li>You may work with a partner on this assignment. They must be in the same class period as you.</li>
+  <li>Write a program in C that implements a music library organizer.</li>
+  <li>This will consist of 2 data structures
+    <ul>
+      <li>A linked list of songs.
+        <ul>
+          <li>Your nodes/links should be able to hold a song’s title and artist. You might use structures like the following:
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct song_node{
+char name[100];
+char artist[100];
+struct song_node *next;
+};
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>An array of 27 linked lists (one for each letter from ‘a’ to ‘z’, and another for other symbols).
+        <ul>
+          <li>Each slot will contain a linked list of all the artists that have names that start with the corresponding letter.</li>
+          <li>When you add a song, it should go on to a linked list at the appropriate array slot in the correct position alphabetically. Assume no duplicate songs.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="linked-list-part">Linked List Part</h3>
+<ul>
+  <li>You should start by making your linked lists work with the following functionality:
+    <ul>
+      <li>insert nodes at the front</li>
+      <li>insert nodes in order
+        <ul>
+          <li>alphabetical by Artist then by Song</li>
+          <li>you should have a helper function to compare song nodes effectively.</li>
+        </ul>
+      </li>
+      <li>print the entire list</li>
+      <li>find and return a pointer to a node based on artist and song name</li>
+      <li>find and return a pointer to the first song of an artist based on artist name</li>
+      <li>Return a pointer to random element in the list.</li>
+      <li>remove a single specified node from the list
+        <ul>
+          <li>specified by both artist and song name.</li>
+        </ul>
+      </li>
+      <li>free the entire list</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="library-part">Library Part</h3>
+<p><strong>DO NOT WORK ON THIS PART UNTIL YOUR LINKED LIST IS COMPLETE</strong></p>
+<ul>
+  <li>Then create your array of linked lists (suggested type: <code class="language-plaintext highlighter-rouge">struct song_node **</code> for the full program to have the following functions:
+    <ul>
+      <li>Allocate enough memory for 27 linked lists, make sure each entry is an empty list.</li>
+      <li>Add song nodes.</li>
+      <li>Search for a song given song and artist name (return a pointer).</li>
+      <li>Search for an artist (return a pointer).</li>
+      <li>Print out all the entries under a certain letter.</li>
+      <li>Print out all the songs of a certain artist</li>
+      <li>Print out the entire library.</li>
+      <li>Shuffle - print out a series of randomly chosen songs.</li>
+      <li>Delete a song</li>
+      <li>Clear out all the linked lists in the library.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="putting-it-all-together">Putting it all together</h3>
+<ul>
+  <li>Files you should have:
+    <ul>
+      <li>A .c file that contains the main function you use to test all your work
+        <ul>
+          <li>You must test all the functions in your main function in order to receive full credit!!!</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Two sets of .h/.c files
+    <ul>
+      <li>There are 2 separate structures being worked on, the linked list and the library.</li>
+    </ul>
+  </li>
+  <li>A makefile that will compile all the parts of your code and generate a single executable program, as well as a run target.</li>
+</ul>
+
+<h3 id="example-testing">Example testing</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LINKED LIST TESTS
+====================================
+
+Testing print_list:
+  [ {ac/dc, thunderstruck} | {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+====================================
+
+Testing print_node:
+  {ac/dc, thunderstruck}
+====================================
+
+Testing find_node:
+looking for [pearl jam: even flow]
+  node found! {pearl jam, even flow}
+looking for [pearl jam: daughter]
+  node not found
+====================================
+
+Testing find_artist:
+looking for [pink floyd]
+  artist found! [ {pink floyd, time} | {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+looking for [pearl jam]
+  artist found! [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+looking for [presidents of the united states of america]
+  artist not found
+====================================
+
+Testing songcmp (helper function):
+Comparing [pearl jam: even flow] to [pearl jam: even flow]
+  0
+Comparing [pearl jam: even flow] to [pearl jam: alive]
+  4
+Comparing [pearl jam: alive] to [pearl jam: even flow]
+  -4
+Comparing [pearl jam: even flow] to [pink floyd: time]
+  -4
+====================================
+
+Testing random:
+{pink floyd, time}
+{radiohead, paranoid android}
+{radiohead, street spirit (fade out)}
+{pearl jam, alive}
+====================================
+
+Testing remove:
+Removing [ac/dc: thunderstruck]
+  [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+Removing [radiohead: street spirit (fade out)]
+  [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {radiohead, paranoid android} | ]
+Removing [pearl jam: yellow ledbetter]
+  [ {pearl jam, alive} | {pearl jam, even flow} | {pink floyd, time} | {radiohead, paranoid android} | ]
+Removing [pearl jam: yellow ledbetter]
+  {pearl jam: yellow ledbetter} not found
+[ {pearl jam, alive} | {pearl jam, even flow} | {pink floyd, time} | {radiohead, paranoid android} | ]
+====================================
+
+Testing free_list
+  freeing_node: {pearl jam, alive}
+  freeing_node: {pearl jam, even flow}
+  freeing_node: {pink floyd, time}
+  freeing_node: {radiohead, paranoid android}
+list after free_list:
+[ ]
+====================================
+
+MUSIC LIBRARY TESTS
+====================================
+
+Testing print_letter
+[ ]
+====================================
+
+Testing print_library
+====================================
+
+Testing print_letter
+[ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+====================================
+
+Testing print_library
+a: [ {ac/dc, thunderstruck} | ]
+p: [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+r: [ {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+====================================
+
+Testing find:
+looking for [pearl jam: alive]
+  song found! {pearl jam, alive}
+looking for [pearl jam: time]
+  song not found
+====================================
+
+Testing find artist:
+looking for [pearl jam]
+  artist found! [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+looking for [pink floyd]
+  artist found! [ {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+looking for [bob dylan]
+  artist not found
+====================================
+
+Testing remove_song
+removing: [pearl jam: alive]
+a: [ {ac/dc, thunderstruck} | ]
+p: [ {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+r: [ {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+
+removing: [pearl jam: yellow ledbetter]
+a: [ {ac/dc, thunderstruck} | ]
+p: [ {pearl jam, even flow} | {pink floyd, time} | {presidents of the united states of america, peaches} | ]
+r: [ {radiohead, paranoid android} | {radiohead, street spirit (fade out)} | ]
+====================================
+
+Testing clear_library:
+  freeing_node: {ac/dc, thunderstruck}
+  freeing_node: {pearl jam, even flow}
+  freeing_node: {pink floyd, time}
+  freeing_node: {presidents of the united states of america, peaches}
+  freeing_node: {radiohead, paranoid android}
+  freeing_node: {radiohead, street spirit (fade out)}
+
+Library after clear:
+====================================
+
+Adding songs to empty library
+a: [ {ac/dc, thunderstruck} | ]
+p: [ {pearl jam, alive} | {pearl jam, even flow} | {pearl jam, yellow ledbetter} | {pink floyd, time} | ]
+====================================
+
+Testing print_artist:
+Printing [pearl jam]
+pearl jam: {pearl jam, alive} {pearl jam, even flow} {pearl jam, yellow ledbetter}
+
+Printing [ac/dc]
+ac/dc: {ac/dc, thunderstruck}
+====================================
+
+
+Printing [radiohead]
+radiohead:
+====================================
+
+Testing shuffle
+{pink floyd, time}
+{pearl jam, yellow ledbetter}
+{pearl jam, alive}
+====================================
+</code></pre></div></div>
+
+  </div><a class="u-url" href="../../../2021/10/19/p00.html" hidden></a>
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="../../../"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

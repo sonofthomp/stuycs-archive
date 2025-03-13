@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Work 06: The Old Switcheroo | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Work 06: The Old Switcheroo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Due: Monday 10/04 10:00am GitHub Submission Link: git@github.com:mks65/06_switcheroo.git" />
+<meta property="og:description" content="Due: Monday 10/04 10:00am GitHub Submission Link: git@github.com:mks65/06_switcheroo.git" />
+<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/systems/2021/10/01/a06.html" />
+<meta property="og:url" content="systems/2021/10/01/a06.html" />
+<meta property="og:site_name" content="Systems Level Programming" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Work 06: The Old Switcheroo" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"systems/2021/10/01/a06.html"},"description":"Due: Monday 10/04 10:00am GitHub Submission Link: git@github.com:mks65/06_switcheroo.git","url":"systems/2021/10/01/a06.html","@type":"BlogPosting","headline":"Work 06: The Old Switcheroo","dateModified":"2021-10-01T00:00:00+00:00","datePublished":"2021-10-01T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+
+
+
+</head>
+<body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../../../">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../notes">Notes</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              
+            </li>
+            
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Work 06: The Old Switcheroo</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-10-01T00:00:00+00:00" itemprop="datePublished">Oct 1, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="due-monday-1004-1000am">Due: Monday 10/04 10:00am</h4>
+<h4 id="github-submission-link-gitgithubcommks6506_switcheroogit">GitHub Submission Link: git@github.com:mks65/06_switcheroo.git</h4>
+
+<!--more-->
+
+<h4 id="do-the-following-in-a-c-program">Do the following in a C program.</h4>
+
+<ol>
+  <li>Create an array large enough to store 10 ints.</li>
+  <li>Set the first value in the array to 0.</li>
+  <li>Populate the rest of the array with random values.
+    <ul>
+      <li>See below for notes on random numbers</li>
+    </ul>
+  </li>
+  <li>Print out the values in this array</li>
+  <li>Create a separate array large enough to store 10 ints.</li>
+  <li>Create pointer variables that will point to each array.</li>
+  <li>USING ONLY POINTER VARIABLES (that is, do not use the array variables) do the following:
+    <ul>
+      <li>Populate the second array with the values in the first but in reverse order</li>
+      <li>Print out the values in the second array</li>
+      <li>Try this using both <code class="language-plaintext highlighter-rouge">[]</code> and <code class="language-plaintext highlighter-rouge">*</code>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>For this assignment, <em>do not create helper functions, put everything inside main</em> (it won’t be too long). We will talk about passing arrays and pointers are function arguments next week.</p>
+
+<h1 id="random-numbers">Random Numbers</h1>
+<ul>
+  <li>Note: On some systems, you may be able to use other functions than the ones described below, but they are not standard for linux, so you should stay away from them for now.</li>
+  <li>Generating a random number in C requires 2 steps
+    <ol>
+      <li>Seeding the random number generator</li>
+    </ol>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">srand( time(NULL) );</code>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">srand(&lt;SEED&gt;)</code> seeds the random number generator with the provided argument.</li>
+          <li>If you use the same argument to <code class="language-plaintext highlighter-rouge">srand()</code> multiple times, you will get the exact same sequence of random numbers.</li>
+          <li><code class="language-plaintext highlighter-rouge">time(NULL)</code> will return the current <a href="https://www.epochconverter.com">EPOCH</a> time, it is commonly used with <code class="language-plaintext highlighter-rouge">srand()</code> to get new random sequences.
+            <ol>
+              <li>Getting a random number</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">int x = rand();</code></li>
+      <li>Returns the next random number in the sequence seeded by <code class="language-plaintext highlighter-rouge">srand()</code>.</li>
+      <li>Returns an <code class="language-plaintext highlighter-rouge">int</code>.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">srand()</code> and <code class="language-plaintext highlighter-rouge">rand()</code> are both in <code class="language-plaintext highlighter-rouge">&lt;stdlib.h&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">time()</code> is in <code class="language-plaintext highlighter-rouge">&lt;time.h&gt;</code></li>
+</ul>
+
+  </div><a class="u-url" href="../../../2021/10/01/a06.html" hidden></a>
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="../../../"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

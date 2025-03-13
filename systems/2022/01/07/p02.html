@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project 02: The Final Frontier | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project 02: The Final Frontier" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Due: Monday 01/25 10:00am GitHub Submission Link: git@github.com:mks65/final.git" />
+<meta property="og:description" content="Due: Monday 01/25 10:00am GitHub Submission Link: git@github.com:mks65/final.git" />
+<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/courses/systems/2022/01/07/p02.html" />
+<meta property="og:url" content="http://moe.stuy.edu/~gthompson30/courses/systems/2022/01/07/p02.html" />
+<meta property="og:site_name" content="Systems Level Programming" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-07T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project 02: The Final Frontier" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://moe.stuy.edu/~gthompson30/courses/systems/2022/01/07/p02.html"},"description":"Due: Monday 01/25 10:00am GitHub Submission Link: git@github.com:mks65/final.git","url":"http://moe.stuy.edu/~gthompson30/courses/systems/2022/01/07/p02.html","@type":"BlogPosting","headline":"Project 02: The Final Frontier","dateModified":"2022-01-07T00:00:00+00:00","datePublished":"2022-01-07T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+
+  
+</head>
+<body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../../../">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../notes">Notes</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              
+            </li>
+            
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Project 02: The Final Frontier</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-01-07T00:00:00+00:00" itemprop="datePublished">Jan 7, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="due-monday-0125-1000am">Due: Monday 01/25 10:00am</h4>
+<h4 id="github-submission-link-gitgithubcommks65finalgit">GitHub Submission Link: git@github.com:mks65/final.git</h4>
+
+<!--more-->
+
+<h3 id="description">Description</h3>
+<ul>
+  <li>The final project is to be a significant piece of work that illustrates many of the ideas and techniques studied in the class:
+    <ul>
+      <li>Allocating memory</li>
+      <li>Working with files</li>
+      <li>Finding information about files (stat and such)</li>
+      <li>Processes (fork, exec etc.)</li>
+      <li>Signals</li>
+      <li>Shared memory</li>
+      <li>Semaphores</li>
+      <li>Pipes (named and unnamed)</li>
+      <li>Sockets</li>
+    </ul>
+  </li>
+  <li>Your project should be able to meaningfully use at least 4 of these concepts. Don’t just toss in a topic if there is no need for it in your project. Part of your design process should include considering how to incorporate the class material.</li>
+  <li>You should also focus on creating a program that works well. It is better to have fewer features in a project that compiles &amp; runs smoothly than to have a lot of features that contain a lot of bugs.</li>
+  <li>When designing your project, it is best to be able to generate a base working project early and then add features modularly as time goes on.</li>
+  <li>You may work with one or two partners, all partners should be in the same section.</li>
+  <li>Project Ideas/Suggestions
+    <ul>
+      <li>If you are having difficulty coming up with a project idea, look back at some of the bigger assignments we’ve done over the semester and think about how you can add to them. These are just some ideas to get you going, please do not consider theses as superior to any other ideas you might have.
+        <ul>
+          <li>The music library could become much more useful by incoperating a music player (fork/exec), saving the library data (maybe even as a binary file), interacting with actual music files etc.</li>
+          <li>The data file/csv assignment could become a more useful data organizing program.</li>
+          <li>Semaphone could be tunred into a pipe or socket based live game.</li>
+          <li>With pipes/sockets, you could write simplified versions of different kinds of servers.</li>
+        </ul>
+      </li>
+      <li>If you are going to write a multi-program system with sockets/pipes, start simply. For example, if you’re making a 2 player game, then just have the programs connect directly do each other, instead of wirting a separate server to connnect them.</li>
+      <li>As stated earlier, it’s better to start small and grow than start large and have to cut things out (or live with bugs).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="proposal---due-wednesady-112-8am">Proposal - due Wednesady 1/12 8am.</h3>
+<p>Should contain the following.</p>
+<ul>
+  <li>The names of the people in the group.</li>
+  <li>The class period you are in.</li>
+  <li>A statement of the problem you are solving and/or a high level description of the project.</li>
+  <li>A description as to how the project will be used (describe the user interface).</li>
+  <li>A description of your technical design. This should include:
+    <ul>
+      <li>How you will be using the topics covered in class in the project.</li>
+      <li>How you are breaking down the project and who is responsible for which parts.</li>
+      <li>What data structures you will be using and how.</li>
+      <li>What algorithms and /or data structures you will be using, and how.</li>
+    </ul>
+  </li>
+  <li>A timeline with expected completion dates of parts of the project.</li>
+</ul>
+
+<p>Proposal Stages:</p>
+<ul>
+  <li>Put together an initial proposal with all the parts that are required in a markdown formatted file.</li>
+  <li>Upload it to github as README.md.</li>
+  <li>When I approve a project I will add an issue to your project repo with further instructions.</li>
+  <li>After that point you can go ahead and work on the project.</li>
+</ul>
+
+<h3 id="documentation-specifications">Documentation Specifications</h3>
+<ul>
+  <li>This is for the final result, you do not need all these files at the proposal stage.</li>
+  <li>In addition to your code files, you will have to include the following documents:</li>
+  <li>makefile
+    <ul>
+      <li>This should build the project when I type make.</li>
+    </ul>
+  </li>
+  <li>README.md
+    <ul>
+      <li>This should be the main README.md for your repository</li>
+      <li>Initially, it will contain your project proposal</li>
+      <li>It should have the following information in the following order:
+        <ul>
+          <li>Project Name</li>
+          <li>Team Members and class period</li>
+          <li>Broad description of project</li>
+          <li>List of any required libraries</li>
+          <li>Include apt-get instructions on how to install the libraries</li>
+          <li>Instructions on how to use your project</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>DEVLOG
+    <ul>
+      <li>This will contain a running list of updates to the project.</li>
+      <li>Each entry should be timestamped and attributed to the student(s) that contributed to the update, along with a brief description of what was done.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="project-notes">Project Notes</h3>
+<ul>
+  <li>You can use any external libraries you’d like, for example, gtk for windowing, sdl for games, etc. but you must do the following:
+    <ul>
+      <li>Make sure to mention any libraries in the README where you describe compiling instructions.</li>
+      <li>Check with me to make sure we can install them.</li>
+      <li>Make sure your program will run in the cs lab computers.</li>
+      <li>Make sure they don’t trivialize a systems programming aspect of the project.</li>
+    </ul>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="../../../2022/01/07/p02.html" hidden></a>
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="../../../"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

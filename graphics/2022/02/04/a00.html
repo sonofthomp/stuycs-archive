@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Work 00: Imagine All the Pixels… | Computer Graphics</title>
+    <meta name="generator" content="Jekyll v3.9.2" />
+    <meta property="og:title" content="Work 00: Imagine All the Pixels…" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="Due: Monday 02/07 8:00am Period 4 GitHub link: https://classroom.github.com/a/fcjaxala Period 5 GitHub link: https://classroom.github.com/a/1XQ65UbE"
+    />
+    <meta
+      property="og:description"
+      content="Due: Monday 02/07 8:00am Period 4 GitHub link: https://classroom.github.com/a/fcjaxala Period 5 GitHub link: https://classroom.github.com/a/1XQ65UbE"
+    />
+    <link
+      rel="canonical"
+      href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/02/04/a00.html"
+    />
+    <meta
+      property="og:url"
+      content="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/2022/02/04/a00.html"
+    />
+    <meta property="og:site_name" content="Computer Graphics" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2022-02-04T00:00:00+00:00"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Work 00: Imagine All the Pixels…" />
+    <!-- End Jekyll SEO tag -->
+    <link rel="stylesheet" href="../../../assets/main.css" />
+    <link
+      type="application/atom+xml"
+      rel="alternate"
+      href="http://moe.stuy.edu/~gthompson30/stuycsarchive/graphics/feed.xml"
+      title="Computer Graphics"
+    />
+    <!-- removing jquery and bootstrap assets
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  -->
+
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <link rel="stylesheet" href="../../../assets/css/site.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="../../../../">StuyCSArchive</a>
+        </li>
+
+        <li class="active">
+          <a href="../../../">Graphics</a>
+        </li>
+
+        <li class="">
+          <a href="../../../assignments">Assignments</a>
+        </li>
+
+        <li class="">
+          <a href="../../../notes">Notes</a>
+        </li>
+
+        <li class="">
+          <a href="../../../resources">Resources</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <article
+        class="post h-entry"
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
+        <header class="post-header">
+          <h1 class="post-title p-name" itemprop="name headline">
+            Work 00: Imagine All the Pixels...
+          </h1>
+          <p class="post-meta">
+            <time
+              class="dt-published"
+              datetime="2022-02-04T00:00:00+00:00"
+              itemprop="datePublished"
+              >Feb 4, 2022
+            </time>
+          </p>
+        </header>
+
+        <div class="post-content e-content" itemprop="articleBody">
+          <h4 id="due-monday-0207-800am">Due: Monday 02/07 8:00am</h4>
+
+          <h4>
+            Period 4 GitHub link:
+            <a href="https://classroom.github.com/a/fcjaxala" target="blank"
+              >https://classroom.github.com/a/fcjaxala</a
+            >
+          </h4>
+          <h4>
+            Period 5 GitHub link:
+            <a href="https://classroom.github.com/a/1XQ65UbE" target="blank"
+              >https://classroom.github.com/a/1XQ65UbE</a
+            >
+          </h4>
+          <!--more-->
+
+          <h4 id="time-for-your-first-computer-generated-image">
+            Time for your first computer generated image:
+          </h4>
+
+          <p>
+            Before anthing else, fill out the information form here:
+            <a href="https://forms.gle/RzdxxmmHS4SUW1Bk8"
+              >https://forms.gle/RzdxxmmHS4SUW1Bk8</a
+            >
+          </p>
+
+          <ol>
+            <li>
+              Create a program that generates a valid ppm image file, it should
+              be at least 500x500, but also don’t make it too big (remember,
+              each pixel is stored as up to 9 bytes - 3 for each color value -
+              so a 1000x1000 image could be 9MB large, they get big fast).
+            </li>
+            <li>
+              Upload your code using the appropriate GitHub classroom link.
+            </li>
+            <li>
+              Convert your image to a png and upload it to the Graphics gallery
+              website:
+              <a href="http://gallery.stuycs.org">http://gallery.stuycs.org</a>
+              <ul>
+                <li>
+                  For help with converting, you should install ImageMagick
+                  <ul>
+                    <li>
+                      on ubuntu:
+                      <code class="language-plaintext highlighter-rouge"
+                        >$ apt-get install imagemagick</code
+                      >
+                    </li>
+                    <li>
+                      on mac:
+                      <ul>
+                        <li>
+                          First install XQuartz:
+                          <a href="https://www.xquartz.org/index.html"
+                            >https://www.xquartz.org/index.html</a
+                          >
+                        </li>
+                        <li>
+                          (if you have homebrew installed):
+                          <code class="language-plaintext highlighter-rouge"
+                            >$ brew install imagemagick --with-x11</code
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      on windows… installing ubuntu and running apt-get install
+                      imagemagick will work, but there may be other options as
+                      well. WSL seems promissing for many.
+                    </li>
+                    <li>
+                      For more detailed instructions (including building and
+                      installing it on your own):
+                      <a
+                        href="http://www.imagemagick.org/script/binary-releases.php"
+                        >http://www.imagemagick.org/script/binary-releases.php</a
+                      >
+                    </li>
+                    <li>
+                      You can also log into any stuy machine remotely, and run
+                      convert on them.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Once you’ve installed image magic, you can convert with the
+                  following command:
+                  <ul>
+                    <li>
+                      <code class="language-plaintext highlighter-rouge"
+                        >$ convert &lt;source&gt; &lt;destination&gt;</code
+                      >
+                    </li>
+                    <li>
+                      example:
+                      <code class="language-plaintext highlighter-rouge"
+                        >$ convert foo.ppm foo.png</code
+                      >
+                    </li>
+                    <li>
+                      The destination format will be automatically set based on
+                      the file extension.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>You must submit your code via github and upload an image!</li>
+            <li><strong>Did you remember to include a makefile?</strong></li>
+          </ol>
+        </div>
+        <a class="u-url" href="../../../2022/02/04/a00.html" hidden></a>
+      </article>
+    </div>
+  </body>
+</html>

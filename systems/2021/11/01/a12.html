@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Work 12: Please follow the Dir[ections] | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Work 12: Please follow the Dir[ections]" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Due: Thursday 11/04 8:00 am GitHub Submission Link: git@github.com:mks65/12_dirinfo.git" />
+<meta property="og:description" content="Due: Thursday 11/04 8:00 am GitHub Submission Link: git@github.com:mks65/12_dirinfo.git" />
+<link rel="canonical" href="http://moe.stuy.edu/~gthompson30/courses/systems/2021/11/01/a12.html" />
+<meta property="og:url" content="http://moe.stuy.edu/~gthompson30/courses/systems/2021/11/01/a12.html" />
+<meta property="og:site_name" content="Systems Level Programming" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Work 12: Please follow the Dir[ections]" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://moe.stuy.edu/~gthompson30/courses/systems/2021/11/01/a12.html"},"description":"Due: Thursday 11/04 8:00 am GitHub Submission Link: git@github.com:mks65/12_dirinfo.git","url":"http://moe.stuy.edu/~gthompson30/courses/systems/2021/11/01/a12.html","@type":"BlogPosting","headline":"Work 12: Please follow the Dir[ections]","dateModified":"2021-11-01T00:00:00+00:00","datePublished":"2021-11-01T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="../../../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+
+
+</head>
+<body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../../../">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../../../notes">Notes</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              
+            </li>
+            
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Work 12: Please follow the Dir[ections]</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-11-01T00:00:00+00:00" itemprop="datePublished">Nov 1, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="due-thursday-1104-800-am">Due: Thursday 11/04 8:00 am</h4>
+<h4 id="github-submission-link-gitgithubcommks6512_dirinfogit">GitHub Submission Link: git@github.com:mks65/12_dirinfo.git</h4>
+
+<!--more-->
+
+<h2 id="new-and-improved-addition">New and improved addition:</h2>
+<ul>
+  <li>Your program should handle user input as follows:
+    <ul>
+      <li>If a command line argument is entered, use that as the directory to scan.</li>
+      <li>If not, the program should ask the user to enter a directory to scan.</li>
+      <li>In either case, don’t assume your user knows what they are doing, if an invalid directory is entered, take reasonable action (<em>ahem</em> <code class="language-plaintext highlighter-rouge">errno</code> <em>cough cough</em>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="write-a-program-that-will-gather-various-information-about-a-directory-specifically">Write a program that will gather various information about a directory, specifically:</h2>
+<ul>
+  <li>For the current directory (<code class="language-plaintext highlighter-rouge">"./"</code>)</li>
+  <li>list all the files in the directory</li>
+  <li>specify which files are directories (if any)</li>
+  <li>show the total size of all the regular files the directory
+    <ul>
+      <li>note that you do not have to recursively go through any subdirectories to find their size for this part (unless you want to, but that is not a simple task)</li>
+    </ul>
+  </li>
+  <li>Possible enhancements:
+    <ul>
+      <li>Recursively list the files in any subdirectories, update the total to include the total size of subdirectories</li>
+      <li>Print out the size in a more readable format (like using KB, MB, GB for -byte prefixes)</li>
+      <li>Make it look more like <code class="language-plaintext highlighter-rouge">$ ls -l</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Below is sample output, yours may differ, but as long as it presents the information requested above you will receive full credit.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./a.out
+Statistics for directory: .
+Total Diectory Size: 17766 Bytes
+Directories:
+        .
+        ..
+        dir
+        structRW
+Regular files:
+        a.out
+        error.log
+        filelist
+        files.c
+        read.c
+        ReadTest
+        redirect.c
+        redirect.c~
+        redirect_full.c
+        redirect_full.c~
+        redirTest
+        statfiles.c
+        statfiles.c~
+        write.c
+        WriteTest
+</code></pre></div></div>
+
+  </div><a class="u-url" href="../../../2021/11/01/a12.html" hidden></a>
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="../../../"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

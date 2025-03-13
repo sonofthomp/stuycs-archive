@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Resources | Systems Level Programming</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Class website for Systems Level Programming" />
+<meta property="og:description" content="Class website for Systems Level Programming" />
+<link rel="canonical" href="../resources/" />
+<meta property="og:url" content="../resources/" />
+<meta property="og:site_name" content="Systems Level Programming" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Resources" />
+<script type="application/ld+json">
+{"description":"Class website for Systems Level Programming","url":"https://www.stuycs.org/systems-dw/resources/","@type":"WebPage","headline":"Resources","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="../assets/main.css"><link type="application/atom+xml" rel="alternate" title="Systems Level Programming" /><script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body><nav class="navbar navbar-default navbar-static-top text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../">StuyCSArchive</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><!--End toggle button-->
+    </div> <!-- /navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+      
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../">Home</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../assignments">Assignments</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "active">
+              <a href = "../resources">Resources</a>
+            </li>
+            
+      
+            
+            
+            
+            <li class = "">
+              <a href = "../notes">Notes</a>
+            </li>
+            
+      
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+      <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Resources</h1>
+  </header>
+
+  <div class="post-content">
+    <h3 id="working-on-a-non-linux-computer">Working on a Non-Linux Computer</h3>
+<ul>
+  <li>To work on a Windows computer, it is highly suggested that you install <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL</a>
+    <ul>
+      <li>Follow the instructions to install WSL version 1 and then upgrade to WSL 2.</li>
+    </ul>
+  </li>
+  <li>To work on a Mac computer
+    <ul>
+      <li>Install Xcode from the App Store</li>
+      <li>Run the following in a terminal in install xcode command line tools: <code class="language-plaintext highlighter-rouge">$ xcode-select --install</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="github-submodule-setup">Github Submodule Setup</h3>
+<p>If you need a refresher on using git in general, see “The Basics” section below.</p>
+
+<p>Think of a submodule as a github repo inside another github repo (I know, woah).</p>
+
+<ul>
+  <li>
+    <p>Each class will have a repo for assignments.</p>
+  </li>
+  <li>
+    <p>Each student/group will create a totally separate repo for their work on their own gh account.</p>
+
+    <ul>
+      <li>This should not live in the main work repo.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Each student/group will clone the main work repo, and then link their own repo as a submodule.</p>
+  </li>
+  <li>
+    <p>Each student/group will get rid of their local copy of the main repo.</p>
+  </li>
+  <li>
+    <p>Each student/group will work on their assignment in the repo created in step 1.</p>
+  </li>
+</ul>
+
+<p>Ok, but what about more instructions with examples you say?</p>
+
+<ol>
+  <li>
+    <p><strong>Create &amp; clone your own repo</strong></p>
+
+    <p>Do all your work in this repo.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone git@github.com:jonalf/work-test.git
+Cloning into 'work-test'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Clone the main repo</strong>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone git@github.com:mks65/euler.git
+Cloning into 'euler'...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 14 (delta 5), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+Checking connectivity... done.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Change into the correct directory and add your repo as a submodule</strong></p>
+
+    <p>Submodule adding is done by: <code class="language-plaintext highlighter-rouge">git submodule add -b &lt;BRANCH&gt; &lt;URL TO YOUR REPOSITORY&gt; &lt;required submodule directory name&gt;</code></p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd euler/
+socrates: euler dw$ cd 04/
+socrates: euler/04 dw$ git submodule add -b main git@github.com:jonalf/work-test.git dyrland-weaverJon
+Cloning into '04/dyrland-weaverJon'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre></div>    </div>
+  </li>
+  <li>Commit and push changes
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git pull
+Already up-to-date.
+socrates:~/Desktop/git_demo/euler/04 dw$ git commit -a -m "added dw submodule"
+[master f25eeda] added dw submodule
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000 randomizer/6/jonalf_dw
+socrates:~/Desktop/git_demo/euler/04 dw$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 626 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/mks65/euler.git
+11dc0c6..f25eeda  master -&gt; master
+</code></pre></div>    </div>
+    <p>You do not have to pull first, but it is a good idea in case anyone has pushed before you have a chance to.</p>
+  </li>
+  <li>Remove the main repo and go about your business
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ../../
+$ rm -rf euler/
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+  </div>
+
+</article>
+
+    </div><footer class="site-footer h-card">
+  <data class="u-url" href="../"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Systems Level Programming</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Systems Level Programming</li><li><a class="u-email" href="mailto:dw@stuy.edu">dw@stuy.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Class website for Systems Level Programming</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
